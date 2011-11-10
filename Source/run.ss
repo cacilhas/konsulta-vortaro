@@ -35,6 +35,15 @@
       (search-callback control control-event))))
 
 
+;; update dictionary
+(define update-callback
+  (λ (item event)
+    (send gui:text-field-trovata
+          set-value "atendu - aguarde - espere")
+    (send gui:text-field-trovata
+          set-value (symbol->string (konsult:update-dict)))))
+
+
 ;; start mainloop
 (gui:project-vortaro-init
  
@@ -43,6 +52,9 @@
  
  #:text-field-vorto-callback
  text-search-callback
+ 
+ #:menu-item-nunigu-callback
+ update-callback
  
  #:menu-item-c-callback
  (factory-insert "ĉ")

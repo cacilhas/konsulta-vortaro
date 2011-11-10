@@ -4,220 +4,219 @@
  (cons 'parent-class #f)
  (cons
   'code
-  (lambda (parent-12394)
-    (let* ((code-12396 parent-12394)
-           (code-12398 (new prop:atom% (value 'project-vortaro)))
-           (code-12397
+  (lambda (parent-7215)
+    (let* ((code-7217 parent-7215)
+           (code-7219 (new prop:atom% (value 'project-vortaro)))
+           (code-7218
             (new
              prop:field-id%
-             (value code-12398)
+             (value code-7219)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12400
-            (new prop:code% (value project%) (value-code 'project%)))
-           (code-12399
+           (code-7221 (new prop:code% (value project%) (value-code 'project%)))
+           (code-7220
             (new
              prop:field-id%
-             (value code-12400)
+             (value code-7221)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12402
+           (code-7223
             (new
              prop:atom%
              (value
               '"/Users/cacilhas/Personal/vortaro/Source/project-vortaro.*.med")))
-           (code-12401
+           (code-7222
             (new
              prop:field-id%
-             (value code-12402)
+             (value code-7223)
              (field-id 'file)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#t)))
-           (code-12404 (new prop:atom% (value '#f)))
-           (code-12403
+           (code-7225 (new prop:atom% (value '#f)))
+           (code-7224
             (new
              prop:field-id%
-             (value code-12404)
+             (value code-7225)
              (field-id 'code-file)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#t)))
-           (code-12406 (new prop:atom% (value '#t)))
-           (code-12405
+           (code-7227 (new prop:atom% (value '#f)))
+           (code-7226
             (new
              prop:field-id%
-             (value code-12406)
+             (value code-7227)
              (field-id 'changed)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#t)))
-           (code-12408 (new prop:atom% (value (list '"framework"))))
-           (code-12407
+           (code-7229 (new prop:atom% (value (list '"framework"))))
+           (code-7228
             (new
              prop:field-id%
-             (value code-12408)
+             (value code-7229)
              (field-id 'code-requires)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12410 (new prop:atom% (value '#f)))
-           (code-12409
+           (code-7231 (new prop:atom% (value '#f)))
+           (code-7230
             (new
              prop:field-id%
-             (value code-12410)
+             (value code-7231)
              (field-id 'runtime-paths?)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12395
+           (code-7216
             (new
              mred-id%
              (plugin (get-widget-plugin 'project))
-             (mred-parent code-12396)
+             (mred-parent code-7217)
              (properties
               (list
-               (cons 'id code-12397)
-               (cons 'code-gen-class code-12399)
-               (cons 'file code-12401)
-               (cons 'code-file code-12403)
-               (cons 'changed code-12405)
-               (cons 'code-requires code-12407)
-               (cons 'runtime-paths? code-12409)))))
-           (code-12413 (new prop:atom% (value 'frame-main)))
-           (code-12412
+               (cons 'id code-7218)
+               (cons 'code-gen-class code-7220)
+               (cons 'file code-7222)
+               (cons 'code-file code-7224)
+               (cons 'changed code-7226)
+               (cons 'code-requires code-7228)
+               (cons 'runtime-paths? code-7230)))))
+           (code-7234 (new prop:atom% (value 'frame-main)))
+           (code-7233
             (new
              prop:field-id%
-             (value code-12413)
+             (value code-7234)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12415 (new prop:code% (value frame%) (value-code 'frame%)))
-           (code-12414
+           (code-7236 (new prop:code% (value frame%) (value-code 'frame%)))
+           (code-7235
             (new
              prop:field-id%
-             (value code-12415)
+             (value code-7236)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12417 (new prop:atom% (value '"Konsulta Vortaro")))
-           (code-12416
+           (code-7238 (new prop:atom% (value '"Konsulta Vortaro")))
+           (code-7237
             (new
              prop:field-id%
-             (value code-12417)
+             (value code-7238)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12421 (new prop:atom% (value '#f)))
-           (code-12422 (new prop:atom% (value '0)))
-           (code-12420 (new prop:hgroup% (value (list code-12421 code-12422))))
-           (code-12423
+           (code-7242 (new prop:atom% (value '#f)))
+           (code-7243 (new prop:atom% (value '0)))
+           (code-7241 (new prop:hgroup% (value (list code-7242 code-7243))))
+           (code-7244
             (new
              prop:code%
              (value (λ (l) (and (first l) (second l))))
              (value-code '(λ (l) (and (first l) (second l))))))
-           (code-12419
+           (code-7240
             (new
              prop:proc%
-             (value code-12420)
-             (prop-code code-12423)
+             (value code-7241)
+             (prop-code code-7244)
              (generate-quoted-code '#f)))
-           (code-12418
+           (code-7239
             (new
              prop:field-id%
-             (value code-12419)
+             (value code-7240)
              (field-id 'width)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12427 (new prop:atom% (value '#f)))
-           (code-12428 (new prop:atom% (value '0)))
-           (code-12426 (new prop:hgroup% (value (list code-12427 code-12428))))
-           (code-12429
+           (code-7248 (new prop:atom% (value '#f)))
+           (code-7249 (new prop:atom% (value '0)))
+           (code-7247 (new prop:hgroup% (value (list code-7248 code-7249))))
+           (code-7250
             (new
              prop:code%
              (value (λ (l) (and (first l) (second l))))
              (value-code '(λ (l) (and (first l) (second l))))))
-           (code-12425
+           (code-7246
             (new
              prop:proc%
-             (value code-12426)
-             (prop-code code-12429)
+             (value code-7247)
+             (prop-code code-7250)
              (generate-quoted-code '#f)))
-           (code-12424
+           (code-7245
             (new
              prop:field-id%
-             (value code-12425)
+             (value code-7246)
              (field-id 'height)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12433 (new prop:atom% (value '#f)))
-           (code-12434 (new prop:atom% (value '0)))
-           (code-12432 (new prop:hgroup% (value (list code-12433 code-12434))))
-           (code-12435
+           (code-7254 (new prop:atom% (value '#f)))
+           (code-7255 (new prop:atom% (value '0)))
+           (code-7253 (new prop:hgroup% (value (list code-7254 code-7255))))
+           (code-7256
             (new
              prop:code%
              (value (λ (l) (and (first l) (second l))))
              (value-code '(λ (l) (and (first l) (second l))))))
-           (code-12431
+           (code-7252
             (new
              prop:proc%
-             (value code-12432)
-             (prop-code code-12435)
+             (value code-7253)
+             (prop-code code-7256)
              (generate-quoted-code '#f)))
-           (code-12430
+           (code-7251
             (new
              prop:field-id%
-             (value code-12431)
+             (value code-7252)
              (field-id 'x)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12439 (new prop:atom% (value '#f)))
-           (code-12440 (new prop:atom% (value '0)))
-           (code-12438 (new prop:hgroup% (value (list code-12439 code-12440))))
-           (code-12441
+           (code-7260 (new prop:atom% (value '#f)))
+           (code-7261 (new prop:atom% (value '0)))
+           (code-7259 (new prop:hgroup% (value (list code-7260 code-7261))))
+           (code-7262
             (new
              prop:code%
              (value (λ (l) (and (first l) (second l))))
              (value-code '(λ (l) (and (first l) (second l))))))
-           (code-12437
+           (code-7258
             (new
              prop:proc%
-             (value code-12438)
-             (prop-code code-12441)
+             (value code-7259)
+             (prop-code code-7262)
              (generate-quoted-code '#f)))
-           (code-12436
+           (code-7257
             (new
              prop:field-id%
-             (value code-12437)
+             (value code-7258)
              (field-id 'y)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12444
+           (code-7265
             (new
              prop:some-of%
              (value (list 'metal))
@@ -232,2668 +231,2843 @@
                'toolbar-button
                'float
                'metal))))
-           (code-12443 (new prop:popup% (value code-12444)))
-           (code-12442
+           (code-7264 (new prop:popup% (value code-7265)))
+           (code-7263
             (new
              prop:field-id%
-             (value code-12443)
+             (value code-7264)
              (field-id 'style)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12446 (new prop:atom% (value '#t)))
-           (code-12445
+           (code-7267 (new prop:atom% (value '#t)))
+           (code-7266
             (new
              prop:field-id%
-             (value code-12446)
+             (value code-7267)
              (field-id 'enabled)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12448 (new prop:atom% (value '0)))
-           (code-12447
+           (code-7269 (new prop:atom% (value '0)))
+           (code-7268
             (new
              prop:field-id%
-             (value code-12448)
+             (value code-7269)
              (field-id 'border)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12450 (new prop:atom% (value '0)))
-           (code-12449
+           (code-7271 (new prop:atom% (value '0)))
+           (code-7270
             (new
              prop:field-id%
-             (value code-12450)
+             (value code-7271)
              (field-id 'spacing)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12453
+           (code-7274
             (new
              prop:one-of%
              (value 'center)
              (choices (list 'left 'center 'right))))
-           (code-12454
+           (code-7275
             (new
              prop:one-of%
              (value 'top)
              (choices (list 'top 'center 'bottom))))
-           (code-12452 (new prop:group% (value (list code-12453 code-12454))))
-           (code-12451
+           (code-7273 (new prop:group% (value (list code-7274 code-7275))))
+           (code-7272
             (new
              prop:field-id%
-             (value code-12452)
+             (value code-7273)
              (field-id 'alignment)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12456 (new prop:atom% (value '70)))
-           (code-12455
+           (code-7277 (new prop:atom% (value '70)))
+           (code-7276
             (new
              prop:field-id%
-             (value code-12456)
+             (value code-7277)
              (field-id 'min-width)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12458 (new prop:atom% (value '30)))
-           (code-12457
+           (code-7279 (new prop:atom% (value '30)))
+           (code-7278
             (new
              prop:field-id%
-             (value code-12458)
+             (value code-7279)
              (field-id 'min-height)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12460 (new prop:atom% (value '#t)))
-           (code-12459
+           (code-7281 (new prop:atom% (value '#t)))
+           (code-7280
             (new
              prop:field-id%
-             (value code-12460)
+             (value code-7281)
              (field-id 'stretchable-width)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12462 (new prop:atom% (value '#t)))
-           (code-12461
+           (code-7283 (new prop:atom% (value '#t)))
+           (code-7282
             (new
              prop:field-id%
-             (value code-12462)
+             (value code-7283)
              (field-id 'stretchable-height)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12464 (new prop:atom% (value '#t)))
-           (code-12463
+           (code-7285 (new prop:atom% (value '#t)))
+           (code-7284
             (new
              prop:field-id%
-             (value code-12464)
+             (value code-7285)
              (field-id 'show-at-init)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12411
+           (code-7232
             (new
              mred-id%
              (plugin (get-widget-plugin 'frame))
-             (mred-parent code-12395)
+             (mred-parent code-7216)
              (properties
               (list
-               (cons 'id code-12412)
-               (cons 'code-gen-class code-12414)
-               (cons 'label code-12416)
-               (cons 'width code-12418)
-               (cons 'height code-12424)
-               (cons 'x code-12430)
-               (cons 'y code-12436)
-               (cons 'style code-12442)
-               (cons 'enabled code-12445)
-               (cons 'border code-12447)
-               (cons 'spacing code-12449)
-               (cons 'alignment code-12451)
-               (cons 'min-width code-12455)
-               (cons 'min-height code-12457)
-               (cons 'stretchable-width code-12459)
-               (cons 'stretchable-height code-12461)
-               (cons 'show-at-init code-12463)))))
-           (code-12467 (new prop:atom% (value 'menu-bar-1204)))
-           (code-12466
+               (cons 'id code-7233)
+               (cons 'code-gen-class code-7235)
+               (cons 'label code-7237)
+               (cons 'width code-7239)
+               (cons 'height code-7245)
+               (cons 'x code-7251)
+               (cons 'y code-7257)
+               (cons 'style code-7263)
+               (cons 'enabled code-7266)
+               (cons 'border code-7268)
+               (cons 'spacing code-7270)
+               (cons 'alignment code-7272)
+               (cons 'min-width code-7276)
+               (cons 'min-height code-7278)
+               (cons 'stretchable-width code-7280)
+               (cons 'stretchable-height code-7282)
+               (cons 'show-at-init code-7284)))))
+           (code-7288 (new prop:atom% (value 'menu-bar-1204)))
+           (code-7287
             (new
              prop:field-id%
-             (value code-12467)
+             (value code-7288)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12469
+           (code-7290
             (new prop:code% (value menu-bar%) (value-code 'menu-bar%)))
-           (code-12468
+           (code-7289
             (new
              prop:field-id%
-             (value code-12469)
+             (value code-7290)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12471
+           (code-7292
             (new
              prop:code%
              (value (lambda (m) (void)))
              (value-code '(lambda (m) (void)))))
-           (code-12470
+           (code-7291
             (new
              prop:field-id%
-             (value code-12471)
+             (value code-7292)
              (field-id 'demand-callback)
-             (option '#t)
+             (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12465
+           (code-7286
             (new
              mred-id%
              (plugin (get-widget-plugin 'menu-bar))
-             (mred-parent code-12411)
+             (mred-parent code-7232)
              (properties
               (list
-               (cons 'id code-12466)
-               (cons 'code-gen-class code-12468)
-               (cons 'demand-callback code-12470)))))
-           (code-12474 (new prop:atom% (value 'menu-2284)))
-           (code-12473
+               (cons 'id code-7287)
+               (cons 'code-gen-class code-7289)
+               (cons 'demand-callback code-7291)))))
+           (code-7295 (new prop:atom% (value 'menu-enigu)))
+           (code-7294
             (new
              prop:field-id%
-             (value code-12474)
+             (value code-7295)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12476 (new prop:code% (value menu%) (value-code 'menu%)))
-           (code-12475
+           (code-7297 (new prop:code% (value menu%) (value-code 'menu%)))
+           (code-7296
             (new
              prop:field-id%
-             (value code-12476)
+             (value code-7297)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12478 (new prop:atom% (value '"&Enigu")))
-           (code-12477
+           (code-7299 (new prop:atom% (value '"&Enigu")))
+           (code-7298
             (new
              prop:field-id%
-             (value code-12478)
+             (value code-7299)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12480 (new prop:atom% (value '"eniga menuo")))
-           (code-12479
+           (code-7301 (new prop:atom% (value '"eniga menuo")))
+           (code-7300
             (new
              prop:field-id%
-             (value code-12480)
+             (value code-7301)
              (field-id 'help-string)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12482
+           (code-7303
             (new
              prop:code%
              (value (lambda (m) (void)))
              (value-code '(lambda (m) (void)))))
-           (code-12481
+           (code-7302
             (new
              prop:field-id%
-             (value code-12482)
+             (value code-7303)
              (field-id 'demand-callback)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12472
+           (code-7293
             (new
              mred-id%
              (plugin (get-widget-plugin 'menu))
-             (mred-parent code-12465)
+             (mred-parent code-7286)
              (properties
               (list
-               (cons 'id code-12473)
-               (cons 'code-gen-class code-12475)
-               (cons 'label code-12477)
-               (cons 'help-string code-12479)
-               (cons 'demand-callback code-12481)))))
-           (code-12485 (new prop:atom% (value 'menu-item-c)))
-           (code-12484
+               (cons 'id code-7294)
+               (cons 'code-gen-class code-7296)
+               (cons 'label code-7298)
+               (cons 'help-string code-7300)
+               (cons 'demand-callback code-7302)))))
+           (code-7306 (new prop:atom% (value 'menu-item-c)))
+           (code-7305
             (new
              prop:field-id%
-             (value code-12485)
+             (value code-7306)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12487
+           (code-7308
             (new prop:code% (value menu-item%) (value-code 'menu-item%)))
-           (code-12486
+           (code-7307
             (new
              prop:field-id%
-             (value code-12487)
+             (value code-7308)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12489 (new prop:atom% (value '"ĉ")))
-           (code-12488
+           (code-7310 (new prop:atom% (value '"ĉ")))
+           (code-7309
             (new
              prop:field-id%
-             (value code-12489)
+             (value code-7310)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12491
+           (code-7312
             (new
              prop:code%
              (value (lambda (item event) (void)))
              (value-code '(lambda (item event) (void)))))
-           (code-12490
+           (code-7311
             (new
              prop:field-id%
-             (value code-12491)
+             (value code-7312)
              (field-id 'callback)
              (option '#t)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12493 (shortcut-values '#\C))
-           (code-12492
+           (code-7314 (shortcut-values '#\C))
+           (code-7313
             (new
              prop:field-id%
-             (value code-12493)
+             (value code-7314)
              (field-id 'shortcut)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12495 (new prop:atom% (value '"Item")))
-           (code-12494
+           (code-7316 (new prop:atom% (value '"Item")))
+           (code-7315
             (new
              prop:field-id%
-             (value code-12495)
+             (value code-7316)
              (field-id 'help-string)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12497
+           (code-7318
             (new
              prop:code%
              (value (lambda (item) (void)))
              (value-code '(lambda (item) (void)))))
-           (code-12496
+           (code-7317
             (new
              prop:field-id%
-             (value code-12497)
+             (value code-7318)
              (field-id 'demand-callback)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12499
+           (code-7320
             (new
              prop:some-of%
              (value (list 'ctl))
              (choices (list 'alt 'cmd 'meta 'ctl 'shift 'option))))
-           (code-12498
+           (code-7319
             (new
              prop:field-id%
-             (value code-12499)
+             (value code-7320)
              (field-id 'shortcut-prefix)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12483
+           (code-7304
             (new
              mred-id%
              (plugin (get-widget-plugin 'menu-item))
-             (mred-parent code-12472)
+             (mred-parent code-7293)
              (properties
               (list
-               (cons 'id code-12484)
-               (cons 'code-gen-class code-12486)
-               (cons 'label code-12488)
-               (cons 'callback code-12490)
-               (cons 'shortcut code-12492)
-               (cons 'help-string code-12494)
-               (cons 'demand-callback code-12496)
-               (cons 'shortcut-prefix code-12498)))))
-           (code-12502 (new prop:atom% (value 'menu-item-cap-c)))
-           (code-12501
+               (cons 'id code-7305)
+               (cons 'code-gen-class code-7307)
+               (cons 'label code-7309)
+               (cons 'callback code-7311)
+               (cons 'shortcut code-7313)
+               (cons 'help-string code-7315)
+               (cons 'demand-callback code-7317)
+               (cons 'shortcut-prefix code-7319)))))
+           (code-7323 (new prop:atom% (value 'menu-item-cap-c)))
+           (code-7322
             (new
              prop:field-id%
-             (value code-12502)
+             (value code-7323)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12504
+           (code-7325
             (new prop:code% (value menu-item%) (value-code 'menu-item%)))
-           (code-12503
+           (code-7324
             (new
              prop:field-id%
-             (value code-12504)
+             (value code-7325)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12506 (new prop:atom% (value '"Ĉ")))
-           (code-12505
+           (code-7327 (new prop:atom% (value '"Ĉ")))
+           (code-7326
             (new
              prop:field-id%
-             (value code-12506)
+             (value code-7327)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12508
+           (code-7329
             (new
              prop:code%
              (value (lambda (item event) (void)))
              (value-code '(lambda (item event) (void)))))
-           (code-12507
+           (code-7328
             (new
              prop:field-id%
-             (value code-12508)
+             (value code-7329)
              (field-id 'callback)
              (option '#t)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12510 (shortcut-values '#\C))
-           (code-12509
+           (code-7331 (shortcut-values '#\C))
+           (code-7330
             (new
              prop:field-id%
-             (value code-12510)
+             (value code-7331)
              (field-id 'shortcut)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12512 (new prop:atom% (value '"Item")))
-           (code-12511
+           (code-7333 (new prop:atom% (value '"Item")))
+           (code-7332
             (new
              prop:field-id%
-             (value code-12512)
+             (value code-7333)
              (field-id 'help-string)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12514
+           (code-7335
             (new
              prop:code%
              (value (lambda (item) (void)))
              (value-code '(lambda (item) (void)))))
-           (code-12513
+           (code-7334
             (new
              prop:field-id%
-             (value code-12514)
+             (value code-7335)
              (field-id 'demand-callback)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12516
+           (code-7337
             (new
              prop:some-of%
              (value (list 'ctl 'shift))
              (choices (list 'alt 'cmd 'meta 'ctl 'shift 'option))))
-           (code-12515
+           (code-7336
             (new
              prop:field-id%
-             (value code-12516)
+             (value code-7337)
              (field-id 'shortcut-prefix)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12500
+           (code-7321
             (new
              mred-id%
              (plugin (get-widget-plugin 'menu-item))
-             (mred-parent code-12472)
+             (mred-parent code-7293)
              (properties
               (list
-               (cons 'id code-12501)
-               (cons 'code-gen-class code-12503)
-               (cons 'label code-12505)
-               (cons 'callback code-12507)
-               (cons 'shortcut code-12509)
-               (cons 'help-string code-12511)
-               (cons 'demand-callback code-12513)
-               (cons 'shortcut-prefix code-12515)))))
-           (code-12519 (new prop:atom% (value 'menu-item-g)))
-           (code-12518
+               (cons 'id code-7322)
+               (cons 'code-gen-class code-7324)
+               (cons 'label code-7326)
+               (cons 'callback code-7328)
+               (cons 'shortcut code-7330)
+               (cons 'help-string code-7332)
+               (cons 'demand-callback code-7334)
+               (cons 'shortcut-prefix code-7336)))))
+           (code-7340 (new prop:atom% (value 'menu-item-g)))
+           (code-7339
             (new
              prop:field-id%
-             (value code-12519)
+             (value code-7340)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12521
+           (code-7342
             (new prop:code% (value menu-item%) (value-code 'menu-item%)))
-           (code-12520
+           (code-7341
             (new
              prop:field-id%
-             (value code-12521)
+             (value code-7342)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12523 (new prop:atom% (value '"ĝ")))
-           (code-12522
+           (code-7344 (new prop:atom% (value '"ĝ")))
+           (code-7343
             (new
              prop:field-id%
-             (value code-12523)
+             (value code-7344)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12525
+           (code-7346
             (new
              prop:code%
              (value (lambda (item event) (void)))
              (value-code '(lambda (item event) (void)))))
-           (code-12524
+           (code-7345
             (new
              prop:field-id%
-             (value code-12525)
+             (value code-7346)
              (field-id 'callback)
              (option '#t)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12527 (shortcut-values '#\G))
-           (code-12526
+           (code-7348 (shortcut-values '#\G))
+           (code-7347
             (new
              prop:field-id%
-             (value code-12527)
+             (value code-7348)
              (field-id 'shortcut)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12529 (new prop:atom% (value '"Item")))
-           (code-12528
+           (code-7350 (new prop:atom% (value '"Item")))
+           (code-7349
             (new
              prop:field-id%
-             (value code-12529)
+             (value code-7350)
              (field-id 'help-string)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12531
+           (code-7352
             (new
              prop:code%
              (value (lambda (item) (void)))
              (value-code '(lambda (item) (void)))))
-           (code-12530
+           (code-7351
             (new
              prop:field-id%
-             (value code-12531)
+             (value code-7352)
              (field-id 'demand-callback)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12533
+           (code-7354
             (new
              prop:some-of%
              (value (list 'ctl))
              (choices (list 'alt 'cmd 'meta 'ctl 'shift 'option))))
-           (code-12532
+           (code-7353
             (new
              prop:field-id%
-             (value code-12533)
+             (value code-7354)
              (field-id 'shortcut-prefix)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12517
+           (code-7338
             (new
              mred-id%
              (plugin (get-widget-plugin 'menu-item))
-             (mred-parent code-12472)
+             (mred-parent code-7293)
              (properties
               (list
-               (cons 'id code-12518)
-               (cons 'code-gen-class code-12520)
-               (cons 'label code-12522)
-               (cons 'callback code-12524)
-               (cons 'shortcut code-12526)
-               (cons 'help-string code-12528)
-               (cons 'demand-callback code-12530)
-               (cons 'shortcut-prefix code-12532)))))
-           (code-12536 (new prop:atom% (value 'menu-item-cap-g)))
-           (code-12535
+               (cons 'id code-7339)
+               (cons 'code-gen-class code-7341)
+               (cons 'label code-7343)
+               (cons 'callback code-7345)
+               (cons 'shortcut code-7347)
+               (cons 'help-string code-7349)
+               (cons 'demand-callback code-7351)
+               (cons 'shortcut-prefix code-7353)))))
+           (code-7357 (new prop:atom% (value 'menu-item-cap-g)))
+           (code-7356
             (new
              prop:field-id%
-             (value code-12536)
+             (value code-7357)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12538
+           (code-7359
             (new prop:code% (value menu-item%) (value-code 'menu-item%)))
-           (code-12537
+           (code-7358
             (new
              prop:field-id%
-             (value code-12538)
+             (value code-7359)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12540 (new prop:atom% (value '"Ĝ")))
-           (code-12539
+           (code-7361 (new prop:atom% (value '"Ĝ")))
+           (code-7360
             (new
              prop:field-id%
-             (value code-12540)
+             (value code-7361)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12542
+           (code-7363
             (new
              prop:code%
              (value (lambda (item event) (void)))
              (value-code '(lambda (item event) (void)))))
-           (code-12541
+           (code-7362
             (new
              prop:field-id%
-             (value code-12542)
+             (value code-7363)
              (field-id 'callback)
              (option '#t)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12544 (shortcut-values '#\G))
-           (code-12543
+           (code-7365 (shortcut-values '#\G))
+           (code-7364
             (new
              prop:field-id%
-             (value code-12544)
+             (value code-7365)
              (field-id 'shortcut)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12546 (new prop:atom% (value '"Item")))
-           (code-12545
+           (code-7367 (new prop:atom% (value '"Item")))
+           (code-7366
             (new
              prop:field-id%
-             (value code-12546)
+             (value code-7367)
              (field-id 'help-string)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12548
+           (code-7369
             (new
              prop:code%
              (value (lambda (item) (void)))
              (value-code '(lambda (item) (void)))))
-           (code-12547
+           (code-7368
             (new
              prop:field-id%
-             (value code-12548)
+             (value code-7369)
              (field-id 'demand-callback)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12550
+           (code-7371
             (new
              prop:some-of%
              (value (list 'ctl 'shift))
              (choices (list 'alt 'cmd 'meta 'ctl 'shift 'option))))
-           (code-12549
+           (code-7370
             (new
              prop:field-id%
-             (value code-12550)
+             (value code-7371)
              (field-id 'shortcut-prefix)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12534
+           (code-7355
             (new
              mred-id%
              (plugin (get-widget-plugin 'menu-item))
-             (mred-parent code-12472)
+             (mred-parent code-7293)
              (properties
               (list
-               (cons 'id code-12535)
-               (cons 'code-gen-class code-12537)
-               (cons 'label code-12539)
-               (cons 'callback code-12541)
-               (cons 'shortcut code-12543)
-               (cons 'help-string code-12545)
-               (cons 'demand-callback code-12547)
-               (cons 'shortcut-prefix code-12549)))))
-           (code-12553 (new prop:atom% (value 'menu-item-h)))
-           (code-12552
+               (cons 'id code-7356)
+               (cons 'code-gen-class code-7358)
+               (cons 'label code-7360)
+               (cons 'callback code-7362)
+               (cons 'shortcut code-7364)
+               (cons 'help-string code-7366)
+               (cons 'demand-callback code-7368)
+               (cons 'shortcut-prefix code-7370)))))
+           (code-7374 (new prop:atom% (value 'menu-item-h)))
+           (code-7373
             (new
              prop:field-id%
-             (value code-12553)
+             (value code-7374)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12555
+           (code-7376
             (new prop:code% (value menu-item%) (value-code 'menu-item%)))
-           (code-12554
+           (code-7375
             (new
              prop:field-id%
-             (value code-12555)
+             (value code-7376)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12557 (new prop:atom% (value '"ĥ")))
-           (code-12556
+           (code-7378 (new prop:atom% (value '"ĥ")))
+           (code-7377
             (new
              prop:field-id%
-             (value code-12557)
+             (value code-7378)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12559
+           (code-7380
             (new
              prop:code%
              (value (lambda (item event) (void)))
              (value-code '(lambda (item event) (void)))))
-           (code-12558
+           (code-7379
             (new
              prop:field-id%
-             (value code-12559)
+             (value code-7380)
              (field-id 'callback)
              (option '#t)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12561 (shortcut-values '#\H))
-           (code-12560
+           (code-7382 (shortcut-values '#\H))
+           (code-7381
             (new
              prop:field-id%
-             (value code-12561)
+             (value code-7382)
              (field-id 'shortcut)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12563 (new prop:atom% (value '"Item")))
-           (code-12562
+           (code-7384 (new prop:atom% (value '"Item")))
+           (code-7383
             (new
              prop:field-id%
-             (value code-12563)
+             (value code-7384)
              (field-id 'help-string)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12565
+           (code-7386
             (new
              prop:code%
              (value (lambda (item) (void)))
              (value-code '(lambda (item) (void)))))
-           (code-12564
+           (code-7385
             (new
              prop:field-id%
-             (value code-12565)
+             (value code-7386)
              (field-id 'demand-callback)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12567
+           (code-7388
             (new
              prop:some-of%
              (value (list 'ctl))
              (choices (list 'alt 'cmd 'meta 'ctl 'shift 'option))))
-           (code-12566
+           (code-7387
             (new
              prop:field-id%
-             (value code-12567)
+             (value code-7388)
              (field-id 'shortcut-prefix)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12551
+           (code-7372
             (new
              mred-id%
              (plugin (get-widget-plugin 'menu-item))
-             (mred-parent code-12472)
+             (mred-parent code-7293)
              (properties
               (list
-               (cons 'id code-12552)
-               (cons 'code-gen-class code-12554)
-               (cons 'label code-12556)
-               (cons 'callback code-12558)
-               (cons 'shortcut code-12560)
-               (cons 'help-string code-12562)
-               (cons 'demand-callback code-12564)
-               (cons 'shortcut-prefix code-12566)))))
-           (code-12570 (new prop:atom% (value 'menu-item-cap-h)))
-           (code-12569
+               (cons 'id code-7373)
+               (cons 'code-gen-class code-7375)
+               (cons 'label code-7377)
+               (cons 'callback code-7379)
+               (cons 'shortcut code-7381)
+               (cons 'help-string code-7383)
+               (cons 'demand-callback code-7385)
+               (cons 'shortcut-prefix code-7387)))))
+           (code-7391 (new prop:atom% (value 'menu-item-cap-h)))
+           (code-7390
             (new
              prop:field-id%
-             (value code-12570)
+             (value code-7391)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12572
+           (code-7393
             (new prop:code% (value menu-item%) (value-code 'menu-item%)))
-           (code-12571
+           (code-7392
             (new
              prop:field-id%
-             (value code-12572)
+             (value code-7393)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12574 (new prop:atom% (value '"Ĥ")))
-           (code-12573
+           (code-7395 (new prop:atom% (value '"Ĥ")))
+           (code-7394
             (new
              prop:field-id%
-             (value code-12574)
+             (value code-7395)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12576
+           (code-7397
             (new
              prop:code%
              (value (lambda (item event) (void)))
              (value-code '(lambda (item event) (void)))))
-           (code-12575
+           (code-7396
             (new
              prop:field-id%
-             (value code-12576)
+             (value code-7397)
              (field-id 'callback)
              (option '#t)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12578 (shortcut-values '#\H))
-           (code-12577
+           (code-7399 (shortcut-values '#\H))
+           (code-7398
             (new
              prop:field-id%
-             (value code-12578)
+             (value code-7399)
              (field-id 'shortcut)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12580 (new prop:atom% (value '"Item")))
-           (code-12579
+           (code-7401 (new prop:atom% (value '"Item")))
+           (code-7400
             (new
              prop:field-id%
-             (value code-12580)
+             (value code-7401)
              (field-id 'help-string)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12582
+           (code-7403
             (new
              prop:code%
              (value (lambda (item) (void)))
              (value-code '(lambda (item) (void)))))
-           (code-12581
+           (code-7402
             (new
              prop:field-id%
-             (value code-12582)
+             (value code-7403)
              (field-id 'demand-callback)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12584
+           (code-7405
             (new
              prop:some-of%
              (value (list 'ctl 'shift))
              (choices (list 'alt 'cmd 'meta 'ctl 'shift 'option))))
-           (code-12583
+           (code-7404
             (new
              prop:field-id%
-             (value code-12584)
+             (value code-7405)
              (field-id 'shortcut-prefix)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12568
+           (code-7389
             (new
              mred-id%
              (plugin (get-widget-plugin 'menu-item))
-             (mred-parent code-12472)
+             (mred-parent code-7293)
              (properties
               (list
-               (cons 'id code-12569)
-               (cons 'code-gen-class code-12571)
-               (cons 'label code-12573)
-               (cons 'callback code-12575)
-               (cons 'shortcut code-12577)
-               (cons 'help-string code-12579)
-               (cons 'demand-callback code-12581)
-               (cons 'shortcut-prefix code-12583)))))
-           (code-12587 (new prop:atom% (value 'menu-item-j)))
-           (code-12586
+               (cons 'id code-7390)
+               (cons 'code-gen-class code-7392)
+               (cons 'label code-7394)
+               (cons 'callback code-7396)
+               (cons 'shortcut code-7398)
+               (cons 'help-string code-7400)
+               (cons 'demand-callback code-7402)
+               (cons 'shortcut-prefix code-7404)))))
+           (code-7408 (new prop:atom% (value 'menu-item-j)))
+           (code-7407
             (new
              prop:field-id%
-             (value code-12587)
+             (value code-7408)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12589
+           (code-7410
             (new prop:code% (value menu-item%) (value-code 'menu-item%)))
-           (code-12588
+           (code-7409
             (new
              prop:field-id%
-             (value code-12589)
+             (value code-7410)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12591 (new prop:atom% (value '"ĵ")))
-           (code-12590
+           (code-7412 (new prop:atom% (value '"ĵ")))
+           (code-7411
             (new
              prop:field-id%
-             (value code-12591)
+             (value code-7412)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12593
+           (code-7414
             (new
              prop:code%
              (value (lambda (item event) (void)))
              (value-code '(lambda (item event) (void)))))
-           (code-12592
+           (code-7413
             (new
              prop:field-id%
-             (value code-12593)
+             (value code-7414)
              (field-id 'callback)
              (option '#t)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12595 (shortcut-values '#\J))
-           (code-12594
+           (code-7416 (shortcut-values '#\J))
+           (code-7415
             (new
              prop:field-id%
-             (value code-12595)
+             (value code-7416)
              (field-id 'shortcut)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12597 (new prop:atom% (value '"Item")))
-           (code-12596
+           (code-7418 (new prop:atom% (value '"Item")))
+           (code-7417
             (new
              prop:field-id%
-             (value code-12597)
+             (value code-7418)
              (field-id 'help-string)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12599
+           (code-7420
             (new
              prop:code%
              (value (lambda (item) (void)))
              (value-code '(lambda (item) (void)))))
-           (code-12598
+           (code-7419
             (new
              prop:field-id%
-             (value code-12599)
+             (value code-7420)
              (field-id 'demand-callback)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12601
+           (code-7422
             (new
              prop:some-of%
              (value (list 'ctl))
              (choices (list 'alt 'cmd 'meta 'ctl 'shift 'option))))
-           (code-12600
+           (code-7421
             (new
              prop:field-id%
-             (value code-12601)
+             (value code-7422)
              (field-id 'shortcut-prefix)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12585
+           (code-7406
             (new
              mred-id%
              (plugin (get-widget-plugin 'menu-item))
-             (mred-parent code-12472)
+             (mred-parent code-7293)
              (properties
               (list
-               (cons 'id code-12586)
-               (cons 'code-gen-class code-12588)
-               (cons 'label code-12590)
-               (cons 'callback code-12592)
-               (cons 'shortcut code-12594)
-               (cons 'help-string code-12596)
-               (cons 'demand-callback code-12598)
-               (cons 'shortcut-prefix code-12600)))))
-           (code-12604 (new prop:atom% (value 'menu-item-cap-j)))
-           (code-12603
+               (cons 'id code-7407)
+               (cons 'code-gen-class code-7409)
+               (cons 'label code-7411)
+               (cons 'callback code-7413)
+               (cons 'shortcut code-7415)
+               (cons 'help-string code-7417)
+               (cons 'demand-callback code-7419)
+               (cons 'shortcut-prefix code-7421)))))
+           (code-7425 (new prop:atom% (value 'menu-item-cap-j)))
+           (code-7424
             (new
              prop:field-id%
-             (value code-12604)
+             (value code-7425)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12606
+           (code-7427
             (new prop:code% (value menu-item%) (value-code 'menu-item%)))
-           (code-12605
+           (code-7426
             (new
              prop:field-id%
-             (value code-12606)
+             (value code-7427)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12608 (new prop:atom% (value '"Ĵ")))
-           (code-12607
+           (code-7429 (new prop:atom% (value '"Ĵ")))
+           (code-7428
             (new
              prop:field-id%
-             (value code-12608)
+             (value code-7429)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12610
+           (code-7431
             (new
              prop:code%
              (value (lambda (item event) (void)))
              (value-code '(lambda (item event) (void)))))
-           (code-12609
+           (code-7430
             (new
              prop:field-id%
-             (value code-12610)
+             (value code-7431)
              (field-id 'callback)
              (option '#t)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12612 (shortcut-values '#\J))
-           (code-12611
+           (code-7433 (shortcut-values '#\J))
+           (code-7432
             (new
              prop:field-id%
-             (value code-12612)
+             (value code-7433)
              (field-id 'shortcut)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12614 (new prop:atom% (value '"Item")))
-           (code-12613
+           (code-7435 (new prop:atom% (value '"Item")))
+           (code-7434
             (new
              prop:field-id%
-             (value code-12614)
+             (value code-7435)
              (field-id 'help-string)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12616
+           (code-7437
             (new
              prop:code%
              (value (lambda (item) (void)))
              (value-code '(lambda (item) (void)))))
-           (code-12615
+           (code-7436
             (new
              prop:field-id%
-             (value code-12616)
+             (value code-7437)
              (field-id 'demand-callback)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12618
+           (code-7439
             (new
              prop:some-of%
              (value (list 'ctl 'shift))
              (choices (list 'alt 'cmd 'meta 'ctl 'shift 'option))))
-           (code-12617
+           (code-7438
             (new
              prop:field-id%
-             (value code-12618)
+             (value code-7439)
              (field-id 'shortcut-prefix)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12602
+           (code-7423
             (new
              mred-id%
              (plugin (get-widget-plugin 'menu-item))
-             (mred-parent code-12472)
+             (mred-parent code-7293)
              (properties
               (list
-               (cons 'id code-12603)
-               (cons 'code-gen-class code-12605)
-               (cons 'label code-12607)
-               (cons 'callback code-12609)
-               (cons 'shortcut code-12611)
-               (cons 'help-string code-12613)
-               (cons 'demand-callback code-12615)
-               (cons 'shortcut-prefix code-12617)))))
-           (code-12621 (new prop:atom% (value 'menu-item-s)))
-           (code-12620
+               (cons 'id code-7424)
+               (cons 'code-gen-class code-7426)
+               (cons 'label code-7428)
+               (cons 'callback code-7430)
+               (cons 'shortcut code-7432)
+               (cons 'help-string code-7434)
+               (cons 'demand-callback code-7436)
+               (cons 'shortcut-prefix code-7438)))))
+           (code-7442 (new prop:atom% (value 'menu-item-s)))
+           (code-7441
             (new
              prop:field-id%
-             (value code-12621)
+             (value code-7442)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12623
+           (code-7444
             (new prop:code% (value menu-item%) (value-code 'menu-item%)))
-           (code-12622
+           (code-7443
             (new
              prop:field-id%
-             (value code-12623)
+             (value code-7444)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12625 (new prop:atom% (value '"ŝ")))
-           (code-12624
+           (code-7446 (new prop:atom% (value '"ŝ")))
+           (code-7445
             (new
              prop:field-id%
-             (value code-12625)
+             (value code-7446)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12627
+           (code-7448
             (new
              prop:code%
              (value (lambda (item event) (void)))
              (value-code '(lambda (item event) (void)))))
-           (code-12626
+           (code-7447
             (new
              prop:field-id%
-             (value code-12627)
+             (value code-7448)
              (field-id 'callback)
              (option '#t)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12629 (shortcut-values '#\S))
-           (code-12628
+           (code-7450 (shortcut-values '#\S))
+           (code-7449
             (new
              prop:field-id%
-             (value code-12629)
+             (value code-7450)
              (field-id 'shortcut)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12631 (new prop:atom% (value '"Item")))
-           (code-12630
+           (code-7452 (new prop:atom% (value '"Item")))
+           (code-7451
             (new
              prop:field-id%
-             (value code-12631)
+             (value code-7452)
              (field-id 'help-string)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12633
+           (code-7454
             (new
              prop:code%
              (value (lambda (item) (void)))
              (value-code '(lambda (item) (void)))))
-           (code-12632
+           (code-7453
             (new
              prop:field-id%
-             (value code-12633)
+             (value code-7454)
              (field-id 'demand-callback)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12635
+           (code-7456
             (new
              prop:some-of%
              (value (list 'ctl))
              (choices (list 'alt 'cmd 'meta 'ctl 'shift 'option))))
-           (code-12634
+           (code-7455
             (new
              prop:field-id%
-             (value code-12635)
+             (value code-7456)
              (field-id 'shortcut-prefix)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12619
+           (code-7440
             (new
              mred-id%
              (plugin (get-widget-plugin 'menu-item))
-             (mred-parent code-12472)
+             (mred-parent code-7293)
              (properties
               (list
-               (cons 'id code-12620)
-               (cons 'code-gen-class code-12622)
-               (cons 'label code-12624)
-               (cons 'callback code-12626)
-               (cons 'shortcut code-12628)
-               (cons 'help-string code-12630)
-               (cons 'demand-callback code-12632)
-               (cons 'shortcut-prefix code-12634)))))
-           (code-12638 (new prop:atom% (value 'menu-item-cap-s)))
-           (code-12637
+               (cons 'id code-7441)
+               (cons 'code-gen-class code-7443)
+               (cons 'label code-7445)
+               (cons 'callback code-7447)
+               (cons 'shortcut code-7449)
+               (cons 'help-string code-7451)
+               (cons 'demand-callback code-7453)
+               (cons 'shortcut-prefix code-7455)))))
+           (code-7459 (new prop:atom% (value 'menu-item-cap-s)))
+           (code-7458
             (new
              prop:field-id%
-             (value code-12638)
+             (value code-7459)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12640
+           (code-7461
             (new prop:code% (value menu-item%) (value-code 'menu-item%)))
-           (code-12639
+           (code-7460
             (new
              prop:field-id%
-             (value code-12640)
+             (value code-7461)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12642 (new prop:atom% (value '"Ŝ")))
-           (code-12641
+           (code-7463 (new prop:atom% (value '"Ŝ")))
+           (code-7462
             (new
              prop:field-id%
-             (value code-12642)
+             (value code-7463)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12644
+           (code-7465
             (new
              prop:code%
              (value (lambda (item event) (void)))
              (value-code '(lambda (item event) (void)))))
-           (code-12643
+           (code-7464
             (new
              prop:field-id%
-             (value code-12644)
+             (value code-7465)
              (field-id 'callback)
              (option '#t)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12646 (shortcut-values '#\S))
-           (code-12645
+           (code-7467 (shortcut-values '#\S))
+           (code-7466
             (new
              prop:field-id%
-             (value code-12646)
+             (value code-7467)
              (field-id 'shortcut)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12648 (new prop:atom% (value '"Item")))
-           (code-12647
+           (code-7469 (new prop:atom% (value '"Item")))
+           (code-7468
             (new
              prop:field-id%
-             (value code-12648)
+             (value code-7469)
              (field-id 'help-string)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12650
+           (code-7471
             (new
              prop:code%
              (value (lambda (item) (void)))
              (value-code '(lambda (item) (void)))))
-           (code-12649
+           (code-7470
             (new
              prop:field-id%
-             (value code-12650)
+             (value code-7471)
              (field-id 'demand-callback)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12652
+           (code-7473
             (new
              prop:some-of%
              (value (list 'ctl 'shift))
              (choices (list 'alt 'cmd 'meta 'ctl 'shift 'option))))
-           (code-12651
+           (code-7472
             (new
              prop:field-id%
-             (value code-12652)
+             (value code-7473)
              (field-id 'shortcut-prefix)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12636
+           (code-7457
             (new
              mred-id%
              (plugin (get-widget-plugin 'menu-item))
-             (mred-parent code-12472)
+             (mred-parent code-7293)
              (properties
               (list
-               (cons 'id code-12637)
-               (cons 'code-gen-class code-12639)
-               (cons 'label code-12641)
-               (cons 'callback code-12643)
-               (cons 'shortcut code-12645)
-               (cons 'help-string code-12647)
-               (cons 'demand-callback code-12649)
-               (cons 'shortcut-prefix code-12651)))))
-           (code-12655 (new prop:atom% (value 'menu-item-u)))
-           (code-12654
+               (cons 'id code-7458)
+               (cons 'code-gen-class code-7460)
+               (cons 'label code-7462)
+               (cons 'callback code-7464)
+               (cons 'shortcut code-7466)
+               (cons 'help-string code-7468)
+               (cons 'demand-callback code-7470)
+               (cons 'shortcut-prefix code-7472)))))
+           (code-7476 (new prop:atom% (value 'menu-item-u)))
+           (code-7475
             (new
              prop:field-id%
-             (value code-12655)
+             (value code-7476)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12657
+           (code-7478
             (new prop:code% (value menu-item%) (value-code 'menu-item%)))
-           (code-12656
+           (code-7477
             (new
              prop:field-id%
-             (value code-12657)
+             (value code-7478)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12659 (new prop:atom% (value '"ŭ")))
-           (code-12658
+           (code-7480 (new prop:atom% (value '"ŭ")))
+           (code-7479
             (new
              prop:field-id%
-             (value code-12659)
+             (value code-7480)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12661
+           (code-7482
             (new
              prop:code%
              (value (lambda (item event) (void)))
              (value-code '(lambda (item event) (void)))))
-           (code-12660
+           (code-7481
             (new
              prop:field-id%
-             (value code-12661)
+             (value code-7482)
              (field-id 'callback)
              (option '#t)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12663 (shortcut-values '#\U))
-           (code-12662
+           (code-7484 (shortcut-values '#\U))
+           (code-7483
             (new
              prop:field-id%
-             (value code-12663)
+             (value code-7484)
              (field-id 'shortcut)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12665 (new prop:atom% (value '"Item")))
-           (code-12664
+           (code-7486 (new prop:atom% (value '"Item")))
+           (code-7485
             (new
              prop:field-id%
-             (value code-12665)
+             (value code-7486)
              (field-id 'help-string)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12667
+           (code-7488
             (new
              prop:code%
              (value (lambda (item) (void)))
              (value-code '(lambda (item) (void)))))
-           (code-12666
+           (code-7487
             (new
              prop:field-id%
-             (value code-12667)
+             (value code-7488)
              (field-id 'demand-callback)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12669
+           (code-7490
             (new
              prop:some-of%
              (value (list 'ctl))
              (choices (list 'alt 'cmd 'meta 'ctl 'shift 'option))))
-           (code-12668
+           (code-7489
             (new
              prop:field-id%
-             (value code-12669)
+             (value code-7490)
              (field-id 'shortcut-prefix)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12653
+           (code-7474
             (new
              mred-id%
              (plugin (get-widget-plugin 'menu-item))
-             (mred-parent code-12472)
+             (mred-parent code-7293)
              (properties
               (list
-               (cons 'id code-12654)
-               (cons 'code-gen-class code-12656)
-               (cons 'label code-12658)
-               (cons 'callback code-12660)
-               (cons 'shortcut code-12662)
-               (cons 'help-string code-12664)
-               (cons 'demand-callback code-12666)
-               (cons 'shortcut-prefix code-12668)))))
-           (code-12672 (new prop:atom% (value 'menu-item-cap-u)))
-           (code-12671
+               (cons 'id code-7475)
+               (cons 'code-gen-class code-7477)
+               (cons 'label code-7479)
+               (cons 'callback code-7481)
+               (cons 'shortcut code-7483)
+               (cons 'help-string code-7485)
+               (cons 'demand-callback code-7487)
+               (cons 'shortcut-prefix code-7489)))))
+           (code-7493 (new prop:atom% (value 'menu-item-cap-u)))
+           (code-7492
             (new
              prop:field-id%
-             (value code-12672)
+             (value code-7493)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12674
+           (code-7495
             (new prop:code% (value menu-item%) (value-code 'menu-item%)))
-           (code-12673
+           (code-7494
             (new
              prop:field-id%
-             (value code-12674)
+             (value code-7495)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12676 (new prop:atom% (value '"Ŭ")))
-           (code-12675
+           (code-7497 (new prop:atom% (value '"Ŭ")))
+           (code-7496
             (new
              prop:field-id%
-             (value code-12676)
+             (value code-7497)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12678
+           (code-7499
             (new
              prop:code%
              (value (lambda (item event) (void)))
              (value-code '(lambda (item event) (void)))))
-           (code-12677
+           (code-7498
             (new
              prop:field-id%
-             (value code-12678)
+             (value code-7499)
              (field-id 'callback)
              (option '#t)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12680 (shortcut-values '#\U))
-           (code-12679
+           (code-7501 (shortcut-values '#\U))
+           (code-7500
             (new
              prop:field-id%
-             (value code-12680)
+             (value code-7501)
              (field-id 'shortcut)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12682 (new prop:atom% (value '"Item")))
-           (code-12681
+           (code-7503 (new prop:atom% (value '"Item")))
+           (code-7502
             (new
              prop:field-id%
-             (value code-12682)
+             (value code-7503)
              (field-id 'help-string)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12684
+           (code-7505
             (new
              prop:code%
              (value (lambda (item) (void)))
              (value-code '(lambda (item) (void)))))
-           (code-12683
+           (code-7504
             (new
              prop:field-id%
-             (value code-12684)
+             (value code-7505)
              (field-id 'demand-callback)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12686
+           (code-7507
             (new
              prop:some-of%
              (value (list 'ctl 'shift))
              (choices (list 'alt 'cmd 'meta 'ctl 'shift 'option))))
-           (code-12685
+           (code-7506
             (new
              prop:field-id%
-             (value code-12686)
+             (value code-7507)
              (field-id 'shortcut-prefix)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12670
+           (code-7491
             (new
              mred-id%
              (plugin (get-widget-plugin 'menu-item))
-             (mred-parent code-12472)
+             (mred-parent code-7293)
              (properties
               (list
-               (cons 'id code-12671)
-               (cons 'code-gen-class code-12673)
-               (cons 'label code-12675)
-               (cons 'callback code-12677)
-               (cons 'shortcut code-12679)
-               (cons 'help-string code-12681)
-               (cons 'demand-callback code-12683)
-               (cons 'shortcut-prefix code-12685)))))
-           (code-12689 (new prop:atom% (value 'message-main-label)))
-           (code-12688
+               (cons 'id code-7492)
+               (cons 'code-gen-class code-7494)
+               (cons 'label code-7496)
+               (cons 'callback code-7498)
+               (cons 'shortcut code-7500)
+               (cons 'help-string code-7502)
+               (cons 'demand-callback code-7504)
+               (cons 'shortcut-prefix code-7506)))))
+           (code-7510 (new prop:atom% (value 'menu-helpu)))
+           (code-7509
             (new
              prop:field-id%
-             (value code-12689)
+             (value code-7510)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12691
-            (new prop:code% (value message%) (value-code 'message%)))
-           (code-12690
+           (code-7512 (new prop:code% (value menu%) (value-code 'menu%)))
+           (code-7511
             (new
              prop:field-id%
-             (value code-12691)
+             (value code-7512)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12695 (new prop:atom% (value '"Konsulta Vortaro")))
-           (code-12696 (new prop:boolean% (value '#t) (label '"Image?")))
-           (code-12697
+           (code-7514 (new prop:atom% (value '"&Helpu")))
+           (code-7513
+            (new
+             prop:field-id%
+             (value code-7514)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-7516 (new prop:atom% (value '"iom da utila ilo")))
+           (code-7515
+            (new
+             prop:field-id%
+             (value code-7516)
+             (field-id 'help-string)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-7518
+            (new
+             prop:code%
+             (value (lambda (m) (void)))
+             (value-code '(lambda (m) (void)))))
+           (code-7517
+            (new
+             prop:field-id%
+             (value code-7518)
+             (field-id 'demand-callback)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-7508
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'menu))
+             (mred-parent code-7286)
+             (properties
+              (list
+               (cons 'id code-7509)
+               (cons 'code-gen-class code-7511)
+               (cons 'label code-7513)
+               (cons 'help-string code-7515)
+               (cons 'demand-callback code-7517)))))
+           (code-7521 (new prop:atom% (value 'menu-item-nunigu)))
+           (code-7520
+            (new
+             prop:field-id%
+             (value code-7521)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-7523
+            (new prop:code% (value menu-item%) (value-code 'menu-item%)))
+           (code-7522
+            (new
+             prop:field-id%
+             (value code-7523)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-7525 (new prop:atom% (value '"Nunigu")))
+           (code-7524
+            (new
+             prop:field-id%
+             (value code-7525)
+             (field-id 'label)
+             (option '#f)
+             (necessary '#t)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-7527
+            (new
+             prop:code%
+             (value (lambda (item event) (void)))
+             (value-code '(lambda (item event) (void)))))
+           (code-7526
+            (new
+             prop:field-id%
+             (value code-7527)
+             (field-id 'callback)
+             (option '#t)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-7529 (shortcut-values '#f))
+           (code-7528
+            (new
+             prop:field-id%
+             (value code-7529)
+             (field-id 'shortcut)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-7531 (new prop:atom% (value '"nunigu vortaron")))
+           (code-7530
+            (new
+             prop:field-id%
+             (value code-7531)
+             (field-id 'help-string)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-7533
+            (new
+             prop:code%
+             (value (lambda (item) (void)))
+             (value-code '(lambda (item) (void)))))
+           (code-7532
+            (new
+             prop:field-id%
+             (value code-7533)
+             (field-id 'demand-callback)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-7535
+            (new
+             prop:some-of%
+             (value (list))
+             (choices (list 'alt 'cmd 'meta 'ctl 'shift 'option))))
+           (code-7534
+            (new
+             prop:field-id%
+             (value code-7535)
+             (field-id 'shortcut-prefix)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-7519
+            (new
+             mred-id%
+             (plugin (get-widget-plugin 'menu-item))
+             (mred-parent code-7508)
+             (properties
+              (list
+               (cons 'id code-7520)
+               (cons 'code-gen-class code-7522)
+               (cons 'label code-7524)
+               (cons 'callback code-7526)
+               (cons 'shortcut code-7528)
+               (cons 'help-string code-7530)
+               (cons 'demand-callback code-7532)
+               (cons 'shortcut-prefix code-7534)))))
+           (code-7538 (new prop:atom% (value 'message-main-label)))
+           (code-7537
+            (new
+             prop:field-id%
+             (value code-7538)
+             (field-id 'id)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#t)
+             (hidden '#f)))
+           (code-7540 (new prop:code% (value message%) (value-code 'message%)))
+           (code-7539
+            (new
+             prop:field-id%
+             (value code-7540)
+             (field-id 'code-gen-class)
+             (option '#f)
+             (necessary '#f)
+             (no-code '#f)
+             (hidden '#f)))
+           (code-7544 (new prop:atom% (value '"Konsulta Vortaro")))
+           (code-7545 (new prop:boolean% (value '#t) (label '"Image?")))
+           (code-7546
             (new prop:file% (value (build-path 'up "Resources" "label.gif"))))
-           (code-12694
-            (new prop:group% (value (list code-12695 code-12696 code-12697))))
-           (code-12698
+           (code-7543
+            (new prop:group% (value (list code-7544 code-7545 code-7546))))
+           (code-7547
             (new
              prop:code%
              (value label-bitmap-proc)
              (value-code 'label-bitmap-proc)))
-           (code-12693
+           (code-7542
             (new
              prop:proc%
-             (value code-12694)
-             (prop-code code-12698)
+             (value code-7543)
+             (prop-code code-7547)
              (generate-quoted-code '#t)))
-           (code-12692
+           (code-7541
             (new
              prop:field-id%
-             (value code-12693)
+             (value code-7542)
              (field-id 'label)
              (option '#t)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12700
+           (code-7549
             (new prop:some-of% (value (list)) (choices (list 'deleted))))
-           (code-12699
+           (code-7548
             (new
              prop:field-id%
-             (value code-12700)
+             (value code-7549)
              (field-id 'style)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12703
+           (code-7552
             (new
              prop:atom%
              (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
-           (code-12704
+           (code-7553
             (new prop:code% (value list->font) (value-code 'list->font)))
-           (code-12702
+           (code-7551
             (new
              prop:font%
-             (value code-12703)
-             (prop-code code-12704)
+             (value code-7552)
+             (prop-code code-7553)
              (generate-quoted-code '#t)))
-           (code-12701
+           (code-7550
             (new
              prop:field-id%
-             (value code-12702)
+             (value code-7551)
              (field-id 'font)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12706 (new prop:atom% (value '#t)))
-           (code-12705
+           (code-7555 (new prop:atom% (value '#t)))
+           (code-7554
             (new
              prop:field-id%
-             (value code-12706)
+             (value code-7555)
              (field-id 'enabled)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12708 (new prop:atom% (value '2)))
-           (code-12707
+           (code-7557 (new prop:atom% (value '2)))
+           (code-7556
             (new
              prop:field-id%
-             (value code-12708)
+             (value code-7557)
              (field-id 'vert-margin)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12710 (new prop:atom% (value '2)))
-           (code-12709
+           (code-7559 (new prop:atom% (value '2)))
+           (code-7558
             (new
              prop:field-id%
-             (value code-12710)
+             (value code-7559)
              (field-id 'horiz-margin)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12712 (new prop:atom% (value '0)))
-           (code-12711
+           (code-7561 (new prop:atom% (value '0)))
+           (code-7560
             (new
              prop:field-id%
-             (value code-12712)
+             (value code-7561)
              (field-id 'min-width)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12714 (new prop:atom% (value '0)))
-           (code-12713
+           (code-7563 (new prop:atom% (value '0)))
+           (code-7562
             (new
              prop:field-id%
-             (value code-12714)
+             (value code-7563)
              (field-id 'min-height)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12716 (new prop:atom% (value '#t)))
-           (code-12715
+           (code-7565 (new prop:atom% (value '#t)))
+           (code-7564
             (new
              prop:field-id%
-             (value code-12716)
+             (value code-7565)
              (field-id 'stretchable-width)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12718 (new prop:atom% (value '#f)))
-           (code-12717
+           (code-7567 (new prop:atom% (value '#f)))
+           (code-7566
             (new
              prop:field-id%
-             (value code-12718)
+             (value code-7567)
              (field-id 'stretchable-height)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12720 (new prop:atom% (value '#f)))
-           (code-12719
+           (code-7569 (new prop:atom% (value '#f)))
+           (code-7568
             (new
              prop:field-id%
-             (value code-12720)
+             (value code-7569)
              (field-id 'auto-resize)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12687
+           (code-7536
             (new
              mred-id%
              (plugin (get-widget-plugin 'message))
-             (mred-parent code-12411)
+             (mred-parent code-7232)
              (properties
               (list
-               (cons 'id code-12688)
-               (cons 'code-gen-class code-12690)
-               (cons 'label code-12692)
-               (cons 'style code-12699)
-               (cons 'font code-12701)
-               (cons 'enabled code-12705)
-               (cons 'vert-margin code-12707)
-               (cons 'horiz-margin code-12709)
-               (cons 'min-width code-12711)
-               (cons 'min-height code-12713)
-               (cons 'stretchable-width code-12715)
-               (cons 'stretchable-height code-12717)
-               (cons 'auto-resize code-12719)))))
-           (code-12723 (new prop:atom% (value 'horizontal-pane-3929)))
-           (code-12722
+               (cons 'id code-7537)
+               (cons 'code-gen-class code-7539)
+               (cons 'label code-7541)
+               (cons 'style code-7548)
+               (cons 'font code-7550)
+               (cons 'enabled code-7554)
+               (cons 'vert-margin code-7556)
+               (cons 'horiz-margin code-7558)
+               (cons 'min-width code-7560)
+               (cons 'min-height code-7562)
+               (cons 'stretchable-width code-7564)
+               (cons 'stretchable-height code-7566)
+               (cons 'auto-resize code-7568)))))
+           (code-7572 (new prop:atom% (value 'horizontal-pane-3929)))
+           (code-7571
             (new
              prop:field-id%
-             (value code-12723)
+             (value code-7572)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12725
+           (code-7574
             (new
              prop:code%
              (value horizontal-pane%)
              (value-code 'horizontal-pane%)))
-           (code-12724
+           (code-7573
             (new
              prop:field-id%
-             (value code-12725)
+             (value code-7574)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12727 (new prop:atom% (value '0)))
-           (code-12726
+           (code-7576 (new prop:atom% (value '0)))
+           (code-7575
             (new
              prop:field-id%
-             (value code-12727)
+             (value code-7576)
              (field-id 'vert-margin)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12729 (new prop:atom% (value '0)))
-           (code-12728
+           (code-7578 (new prop:atom% (value '0)))
+           (code-7577
             (new
              prop:field-id%
-             (value code-12729)
+             (value code-7578)
              (field-id 'horiz-margin)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12731 (new prop:atom% (value '0)))
-           (code-12730
+           (code-7580 (new prop:atom% (value '0)))
+           (code-7579
             (new
              prop:field-id%
-             (value code-12731)
+             (value code-7580)
              (field-id 'border)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12733 (new prop:atom% (value '0)))
-           (code-12732
+           (code-7582 (new prop:atom% (value '0)))
+           (code-7581
             (new
              prop:field-id%
-             (value code-12733)
+             (value code-7582)
              (field-id 'spacing)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12736
+           (code-7585
             (new
              prop:one-of%
              (value 'left)
              (choices (list 'left 'center 'right))))
-           (code-12737
+           (code-7586
             (new
              prop:one-of%
              (value 'center)
              (choices (list 'top 'center 'bottom))))
-           (code-12735 (new prop:group% (value (list code-12736 code-12737))))
-           (code-12734
+           (code-7584 (new prop:group% (value (list code-7585 code-7586))))
+           (code-7583
             (new
              prop:field-id%
-             (value code-12735)
+             (value code-7584)
              (field-id 'alignment)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12739 (new prop:atom% (value '0)))
-           (code-12738
+           (code-7588 (new prop:atom% (value '0)))
+           (code-7587
             (new
              prop:field-id%
-             (value code-12739)
+             (value code-7588)
              (field-id 'min-width)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12741 (new prop:atom% (value '0)))
-           (code-12740
+           (code-7590 (new prop:atom% (value '0)))
+           (code-7589
             (new
              prop:field-id%
-             (value code-12741)
+             (value code-7590)
              (field-id 'min-height)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12743 (new prop:atom% (value '#t)))
-           (code-12742
+           (code-7592 (new prop:atom% (value '#t)))
+           (code-7591
             (new
              prop:field-id%
-             (value code-12743)
+             (value code-7592)
              (field-id 'stretchable-width)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12745 (new prop:atom% (value '#f)))
-           (code-12744
+           (code-7594 (new prop:atom% (value '#f)))
+           (code-7593
             (new
              prop:field-id%
-             (value code-12745)
+             (value code-7594)
              (field-id 'stretchable-height)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12721
+           (code-7570
             (new
              mred-id%
              (plugin (get-widget-plugin 'horizontal-pane))
-             (mred-parent code-12411)
+             (mred-parent code-7232)
              (properties
               (list
-               (cons 'id code-12722)
-               (cons 'code-gen-class code-12724)
-               (cons 'vert-margin code-12726)
-               (cons 'horiz-margin code-12728)
-               (cons 'border code-12730)
-               (cons 'spacing code-12732)
-               (cons 'alignment code-12734)
-               (cons 'min-width code-12738)
-               (cons 'min-height code-12740)
-               (cons 'stretchable-width code-12742)
-               (cons 'stretchable-height code-12744)))))
-           (code-12748 (new prop:atom% (value 'text-field-vorto)))
-           (code-12747
+               (cons 'id code-7571)
+               (cons 'code-gen-class code-7573)
+               (cons 'vert-margin code-7575)
+               (cons 'horiz-margin code-7577)
+               (cons 'border code-7579)
+               (cons 'spacing code-7581)
+               (cons 'alignment code-7583)
+               (cons 'min-width code-7587)
+               (cons 'min-height code-7589)
+               (cons 'stretchable-width code-7591)
+               (cons 'stretchable-height code-7593)))))
+           (code-7597 (new prop:atom% (value 'text-field-vorto)))
+           (code-7596
             (new
              prop:field-id%
-             (value code-12748)
+             (value code-7597)
              (field-id 'id)
              (option '#t)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12750
+           (code-7599
             (new prop:code% (value text-field%) (value-code 'text-field%)))
-           (code-12749
+           (code-7598
             (new
              prop:field-id%
-             (value code-12750)
+             (value code-7599)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12752 (new prop:atom% (value '"Vorto")))
-           (code-12751
+           (code-7601 (new prop:atom% (value '"Vorto")))
+           (code-7600
             (new
              prop:field-id%
-             (value code-12752)
+             (value code-7601)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12754
+           (code-7603
             (new
              prop:code%
              (value (lambda (text-field control-event) (void)))
              (value-code '(lambda (text-field control-event) (void)))))
-           (code-12753
+           (code-7602
             (new
              prop:field-id%
-             (value code-12754)
+             (value code-7603)
              (field-id 'callback)
              (option '#t)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12756 (new prop:atom% (value '"")))
-           (code-12755
+           (code-7605 (new prop:atom% (value '"")))
+           (code-7604
             (new
              prop:field-id%
-             (value code-12756)
+             (value code-7605)
              (field-id 'init-value)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12760
+           (code-7609
             (new
              prop:one-of%
              (value 'single)
              (choices (list 'single 'multiple))))
-           (code-12761
+           (code-7610
             (new
              prop:one-of%
              (value 'horizontal-label)
              (choices (list 'vertical-label 'horizontal-label))))
-           (code-12762
+           (code-7611
             (new
              prop:some-of%
              (value (list))
              (choices (list 'hscroll 'password 'deleted))))
-           (code-12759
-            (new prop:group% (value (list code-12760 code-12761 code-12762))))
-           (code-12763
+           (code-7608
+            (new prop:group% (value (list code-7609 code-7610 code-7611))))
+           (code-7612
             (new
              prop:code%
              (value (λ (l) (list* (first l) (second l) (third l))))
              (value-code '(λ (l) (list* (first l) (second l) (third l))))))
-           (code-12758
+           (code-7607
             (new
              prop:proc%
-             (value code-12759)
-             (prop-code code-12763)
+             (value code-7608)
+             (prop-code code-7612)
              (generate-quoted-code '#t)))
-           (code-12757
+           (code-7606
             (new
              prop:field-id%
-             (value code-12758)
+             (value code-7607)
              (field-id 'style)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12766
+           (code-7615
             (new
              prop:atom%
              (value
               (list '14 '"Arial" 'default 'normal 'normal '#f 'default '#f))))
-           (code-12767
+           (code-7616
             (new prop:code% (value list->font) (value-code 'list->font)))
-           (code-12765
+           (code-7614
             (new
              prop:font%
-             (value code-12766)
-             (prop-code code-12767)
+             (value code-7615)
+             (prop-code code-7616)
              (generate-quoted-code '#t)))
-           (code-12764
+           (code-7613
             (new
              prop:field-id%
-             (value code-12765)
+             (value code-7614)
              (field-id 'font)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12769 (new prop:atom% (value '#t)))
-           (code-12768
+           (code-7618 (new prop:atom% (value '#t)))
+           (code-7617
             (new
              prop:field-id%
-             (value code-12769)
+             (value code-7618)
              (field-id 'enabled)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12771 (new prop:atom% (value '2)))
-           (code-12770
+           (code-7620 (new prop:atom% (value '2)))
+           (code-7619
             (new
              prop:field-id%
-             (value code-12771)
+             (value code-7620)
              (field-id 'vert-margin)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12773 (new prop:atom% (value '2)))
-           (code-12772
+           (code-7622 (new prop:atom% (value '2)))
+           (code-7621
             (new
              prop:field-id%
-             (value code-12773)
+             (value code-7622)
              (field-id 'horiz-margin)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12775 (new prop:atom% (value '300)))
-           (code-12774
+           (code-7624 (new prop:atom% (value '300)))
+           (code-7623
             (new
              prop:field-id%
-             (value code-12775)
+             (value code-7624)
              (field-id 'min-width)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12777 (new prop:atom% (value '0)))
-           (code-12776
+           (code-7626 (new prop:atom% (value '0)))
+           (code-7625
             (new
              prop:field-id%
-             (value code-12777)
+             (value code-7626)
              (field-id 'min-height)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12779 (new prop:atom% (value '#t)))
-           (code-12778
+           (code-7628 (new prop:atom% (value '#t)))
+           (code-7627
             (new
              prop:field-id%
-             (value code-12779)
+             (value code-7628)
              (field-id 'stretchable-width)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12781 (new prop:atom% (value '#f)))
-           (code-12780
+           (code-7630 (new prop:atom% (value '#f)))
+           (code-7629
             (new
              prop:field-id%
-             (value code-12781)
+             (value code-7630)
              (field-id 'stretchable-height)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12746
+           (code-7595
             (new
              mred-id%
              (plugin (get-widget-plugin 'text-field))
-             (mred-parent code-12721)
+             (mred-parent code-7570)
              (properties
               (list
-               (cons 'id code-12747)
-               (cons 'code-gen-class code-12749)
-               (cons 'label code-12751)
-               (cons 'callback code-12753)
-               (cons 'init-value code-12755)
-               (cons 'style code-12757)
-               (cons 'font code-12764)
-               (cons 'enabled code-12768)
-               (cons 'vert-margin code-12770)
-               (cons 'horiz-margin code-12772)
-               (cons 'min-width code-12774)
-               (cons 'min-height code-12776)
-               (cons 'stretchable-width code-12778)
-               (cons 'stretchable-height code-12780)))))
-           (code-12784 (new prop:atom% (value 'button-sercxu)))
-           (code-12783
+               (cons 'id code-7596)
+               (cons 'code-gen-class code-7598)
+               (cons 'label code-7600)
+               (cons 'callback code-7602)
+               (cons 'init-value code-7604)
+               (cons 'style code-7606)
+               (cons 'font code-7613)
+               (cons 'enabled code-7617)
+               (cons 'vert-margin code-7619)
+               (cons 'horiz-margin code-7621)
+               (cons 'min-width code-7623)
+               (cons 'min-height code-7625)
+               (cons 'stretchable-width code-7627)
+               (cons 'stretchable-height code-7629)))))
+           (code-7633 (new prop:atom% (value 'button-sercxu)))
+           (code-7632
             (new
              prop:field-id%
-             (value code-12784)
+             (value code-7633)
              (field-id 'id)
              (option '#f)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12786 (new prop:code% (value button%) (value-code 'button%)))
-           (code-12785
+           (code-7635 (new prop:code% (value button%) (value-code 'button%)))
+           (code-7634
             (new
              prop:field-id%
-             (value code-12786)
+             (value code-7635)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12790 (new prop:atom% (value '"Serĉu")))
-           (code-12791 (new prop:boolean% (value '#f) (label '"Image?")))
-           (code-12792 (new prop:file% (value '#f)))
-           (code-12789
-            (new prop:group% (value (list code-12790 code-12791 code-12792))))
-           (code-12793
+           (code-7639 (new prop:atom% (value '"Serĉu")))
+           (code-7640 (new prop:boolean% (value '#f) (label '"Image?")))
+           (code-7641 (new prop:file% (value '#f)))
+           (code-7638
+            (new prop:group% (value (list code-7639 code-7640 code-7641))))
+           (code-7642
             (new
              prop:code%
              (value label-bitmap-proc)
              (value-code 'label-bitmap-proc)))
-           (code-12788
+           (code-7637
             (new
              prop:proc%
-             (value code-12789)
-             (prop-code code-12793)
+             (value code-7638)
+             (prop-code code-7642)
              (generate-quoted-code '#t)))
-           (code-12787
+           (code-7636
             (new
              prop:field-id%
-             (value code-12788)
+             (value code-7637)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12795
+           (code-7644
             (new
              prop:code%
              (value (lambda (button control-event) (void)))
              (value-code '(lambda (button control-event) (void)))))
-           (code-12794
+           (code-7643
             (new
              prop:field-id%
-             (value code-12795)
+             (value code-7644)
              (field-id 'callback)
              (option '#t)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12797
+           (code-7646
             (new
              prop:some-of%
              (value (list))
              (choices (list 'border 'deleted))))
-           (code-12796
+           (code-7645
             (new
              prop:field-id%
-             (value code-12797)
+             (value code-7646)
              (field-id 'style)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12800
+           (code-7649
             (new
              prop:atom%
              (value
               (list '14 '"Arial" 'default 'normal 'normal '#f 'default '#f))))
-           (code-12801
+           (code-7650
             (new prop:code% (value list->font) (value-code 'list->font)))
-           (code-12799
+           (code-7648
             (new
              prop:font%
-             (value code-12800)
-             (prop-code code-12801)
+             (value code-7649)
+             (prop-code code-7650)
              (generate-quoted-code '#t)))
-           (code-12798
+           (code-7647
             (new
              prop:field-id%
-             (value code-12799)
+             (value code-7648)
              (field-id 'font)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12803 (new prop:atom% (value '#t)))
-           (code-12802
+           (code-7652 (new prop:atom% (value '#t)))
+           (code-7651
             (new
              prop:field-id%
-             (value code-12803)
+             (value code-7652)
              (field-id 'enabled)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12805 (new prop:atom% (value '2)))
-           (code-12804
+           (code-7654 (new prop:atom% (value '2)))
+           (code-7653
             (new
              prop:field-id%
-             (value code-12805)
+             (value code-7654)
              (field-id 'vert-margin)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12807 (new prop:atom% (value '2)))
-           (code-12806
+           (code-7656 (new prop:atom% (value '2)))
+           (code-7655
             (new
              prop:field-id%
-             (value code-12807)
+             (value code-7656)
              (field-id 'horiz-margin)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12809 (new prop:atom% (value '0)))
-           (code-12808
+           (code-7658 (new prop:atom% (value '0)))
+           (code-7657
             (new
              prop:field-id%
-             (value code-12809)
+             (value code-7658)
              (field-id 'min-width)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12811 (new prop:atom% (value '0)))
-           (code-12810
+           (code-7660 (new prop:atom% (value '0)))
+           (code-7659
             (new
              prop:field-id%
-             (value code-12811)
+             (value code-7660)
              (field-id 'min-height)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12813 (new prop:atom% (value '#f)))
-           (code-12812
+           (code-7662 (new prop:atom% (value '#f)))
+           (code-7661
             (new
              prop:field-id%
-             (value code-12813)
+             (value code-7662)
              (field-id 'stretchable-width)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12815 (new prop:atom% (value '#f)))
-           (code-12814
+           (code-7664 (new prop:atom% (value '#f)))
+           (code-7663
             (new
              prop:field-id%
-             (value code-12815)
+             (value code-7664)
              (field-id 'stretchable-height)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12782
+           (code-7631
             (new
              mred-id%
              (plugin (get-widget-plugin 'button))
-             (mred-parent code-12721)
+             (mred-parent code-7570)
              (properties
               (list
-               (cons 'id code-12783)
-               (cons 'code-gen-class code-12785)
-               (cons 'label code-12787)
-               (cons 'callback code-12794)
-               (cons 'style code-12796)
-               (cons 'font code-12798)
-               (cons 'enabled code-12802)
-               (cons 'vert-margin code-12804)
-               (cons 'horiz-margin code-12806)
-               (cons 'min-width code-12808)
-               (cons 'min-height code-12810)
-               (cons 'stretchable-width code-12812)
-               (cons 'stretchable-height code-12814)))))
-           (code-12818 (new prop:atom% (value 'text-field-trovata)))
-           (code-12817
+               (cons 'id code-7632)
+               (cons 'code-gen-class code-7634)
+               (cons 'label code-7636)
+               (cons 'callback code-7643)
+               (cons 'style code-7645)
+               (cons 'font code-7647)
+               (cons 'enabled code-7651)
+               (cons 'vert-margin code-7653)
+               (cons 'horiz-margin code-7655)
+               (cons 'min-width code-7657)
+               (cons 'min-height code-7659)
+               (cons 'stretchable-width code-7661)
+               (cons 'stretchable-height code-7663)))))
+           (code-7667 (new prop:atom% (value 'text-field-trovata)))
+           (code-7666
             (new
              prop:field-id%
-             (value code-12818)
+             (value code-7667)
              (field-id 'id)
              (option '#t)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12820
+           (code-7669
             (new prop:code% (value text-field%) (value-code 'text-field%)))
-           (code-12819
+           (code-7668
             (new
              prop:field-id%
-             (value code-12820)
+             (value code-7669)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12822 (new prop:atom% (value '"")))
-           (code-12821
+           (code-7671 (new prop:atom% (value '"")))
+           (code-7670
             (new
              prop:field-id%
-             (value code-12822)
+             (value code-7671)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12824
+           (code-7673
             (new
              prop:code%
              (value (lambda (text-field control-event) (void)))
              (value-code '(lambda (text-field control-event) (void)))))
-           (code-12823
+           (code-7672
             (new
              prop:field-id%
-             (value code-12824)
+             (value code-7673)
              (field-id 'callback)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12826 (new prop:atom% (value '"")))
-           (code-12825
+           (code-7675 (new prop:atom% (value '"")))
+           (code-7674
             (new
              prop:field-id%
-             (value code-12826)
+             (value code-7675)
              (field-id 'init-value)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12830
+           (code-7679
             (new
              prop:one-of%
              (value 'multiple)
              (choices (list 'single 'multiple))))
-           (code-12831
+           (code-7680
             (new
              prop:one-of%
              (value 'horizontal-label)
              (choices (list 'vertical-label 'horizontal-label))))
-           (code-12832
+           (code-7681
             (new
              prop:some-of%
              (value (list))
              (choices (list 'hscroll 'password 'deleted))))
-           (code-12829
-            (new prop:group% (value (list code-12830 code-12831 code-12832))))
-           (code-12833
+           (code-7678
+            (new prop:group% (value (list code-7679 code-7680 code-7681))))
+           (code-7682
             (new
              prop:code%
              (value (λ (l) (list* (first l) (second l) (third l))))
              (value-code '(λ (l) (list* (first l) (second l) (third l))))))
-           (code-12828
+           (code-7677
             (new
              prop:proc%
-             (value code-12829)
-             (prop-code code-12833)
+             (value code-7678)
+             (prop-code code-7682)
              (generate-quoted-code '#t)))
-           (code-12827
+           (code-7676
             (new
              prop:field-id%
-             (value code-12828)
+             (value code-7677)
              (field-id 'style)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12836
+           (code-7685
             (new
              prop:atom%
              (value
               (list '14 '"Arial" 'default 'normal 'normal '#f 'default '#f))))
-           (code-12837
+           (code-7686
             (new prop:code% (value list->font) (value-code 'list->font)))
-           (code-12835
+           (code-7684
             (new
              prop:font%
-             (value code-12836)
-             (prop-code code-12837)
+             (value code-7685)
+             (prop-code code-7686)
              (generate-quoted-code '#t)))
-           (code-12834
+           (code-7683
             (new
              prop:field-id%
-             (value code-12835)
+             (value code-7684)
              (field-id 'font)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12839 (new prop:atom% (value '#t)))
-           (code-12838
+           (code-7688 (new prop:atom% (value '#t)))
+           (code-7687
             (new
              prop:field-id%
-             (value code-12839)
+             (value code-7688)
              (field-id 'enabled)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12841 (new prop:atom% (value '2)))
-           (code-12840
+           (code-7690 (new prop:atom% (value '2)))
+           (code-7689
             (new
              prop:field-id%
-             (value code-12841)
+             (value code-7690)
              (field-id 'vert-margin)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12843 (new prop:atom% (value '2)))
-           (code-12842
+           (code-7692 (new prop:atom% (value '2)))
+           (code-7691
             (new
              prop:field-id%
-             (value code-12843)
+             (value code-7692)
              (field-id 'horiz-margin)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12845 (new prop:atom% (value '480)))
-           (code-12844
+           (code-7694 (new prop:atom% (value '480)))
+           (code-7693
             (new
              prop:field-id%
-             (value code-12845)
+             (value code-7694)
              (field-id 'min-width)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12847 (new prop:atom% (value '300)))
-           (code-12846
+           (code-7696 (new prop:atom% (value '300)))
+           (code-7695
             (new
              prop:field-id%
-             (value code-12847)
+             (value code-7696)
              (field-id 'min-height)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12849 (new prop:atom% (value '#t)))
-           (code-12848
+           (code-7698 (new prop:atom% (value '#t)))
+           (code-7697
             (new
              prop:field-id%
-             (value code-12849)
+             (value code-7698)
              (field-id 'stretchable-width)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12851 (new prop:atom% (value '#t)))
-           (code-12850
+           (code-7700 (new prop:atom% (value '#t)))
+           (code-7699
             (new
              prop:field-id%
-             (value code-12851)
+             (value code-7700)
              (field-id 'stretchable-height)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12816
+           (code-7665
             (new
              mred-id%
              (plugin (get-widget-plugin 'text-field))
-             (mred-parent code-12411)
+             (mred-parent code-7232)
              (properties
               (list
-               (cons 'id code-12817)
-               (cons 'code-gen-class code-12819)
-               (cons 'label code-12821)
-               (cons 'callback code-12823)
-               (cons 'init-value code-12825)
-               (cons 'style code-12827)
-               (cons 'font code-12834)
-               (cons 'enabled code-12838)
-               (cons 'vert-margin code-12840)
-               (cons 'horiz-margin code-12842)
-               (cons 'min-width code-12844)
-               (cons 'min-height code-12846)
-               (cons 'stretchable-width code-12848)
-               (cons 'stretchable-height code-12850)))))
-           (code-12854 (new prop:atom% (value 'gauge-load)))
-           (code-12853
+               (cons 'id code-7666)
+               (cons 'code-gen-class code-7668)
+               (cons 'label code-7670)
+               (cons 'callback code-7672)
+               (cons 'init-value code-7674)
+               (cons 'style code-7676)
+               (cons 'font code-7683)
+               (cons 'enabled code-7687)
+               (cons 'vert-margin code-7689)
+               (cons 'horiz-margin code-7691)
+               (cons 'min-width code-7693)
+               (cons 'min-height code-7695)
+               (cons 'stretchable-width code-7697)
+               (cons 'stretchable-height code-7699)))))
+           (code-7703 (new prop:atom% (value 'gauge-load)))
+           (code-7702
             (new
              prop:field-id%
-             (value code-12854)
+             (value code-7703)
              (field-id 'id)
              (option '#t)
              (necessary '#f)
              (no-code '#t)
              (hidden '#f)))
-           (code-12856 (new prop:code% (value gauge%) (value-code 'gauge%)))
-           (code-12855
+           (code-7705 (new prop:code% (value gauge%) (value-code 'gauge%)))
+           (code-7704
             (new
              prop:field-id%
-             (value code-12856)
+             (value code-7705)
              (field-id 'code-gen-class)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12858 (new prop:atom% (value '"")))
-           (code-12857
+           (code-7707 (new prop:atom% (value '"")))
+           (code-7706
             (new
              prop:field-id%
-             (value code-12858)
+             (value code-7707)
              (field-id 'label)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12860 (new prop:atom% (value '100)))
-           (code-12859
+           (code-7709 (new prop:atom% (value '100)))
+           (code-7708
             (new
              prop:field-id%
-             (value code-12860)
+             (value code-7709)
              (field-id 'range)
              (option '#f)
              (necessary '#t)
              (no-code '#f)
              (hidden '#f)))
-           (code-12864
+           (code-7713
             (new
              prop:one-of%
              (value 'horizontal)
              (choices (list 'horizontal 'vertical))))
-           (code-12865
+           (code-7714
             (new
              prop:one-of%
              (value 'horizontal-label)
              (choices (list 'vertical-label 'horizontal-label))))
-           (code-12866
+           (code-7715
             (new prop:some-of% (value (list)) (choices (list 'deleted))))
-           (code-12863
-            (new prop:group% (value (list code-12864 code-12865 code-12866))))
-           (code-12867
+           (code-7712
+            (new prop:group% (value (list code-7713 code-7714 code-7715))))
+           (code-7716
             (new
              prop:code%
              (value (λ (l) (list* (first l) (second l) (third l))))
              (value-code '(λ (l) (list* (first l) (second l) (third l))))))
-           (code-12862
+           (code-7711
             (new
              prop:proc%
-             (value code-12863)
-             (prop-code code-12867)
+             (value code-7712)
+             (prop-code code-7716)
              (generate-quoted-code '#t)))
-           (code-12861
+           (code-7710
             (new
              prop:field-id%
-             (value code-12862)
+             (value code-7711)
              (field-id 'style)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12870
+           (code-7719
             (new
              prop:atom%
              (value (list '8 '#f 'default 'normal 'normal '#f 'default '#f))))
-           (code-12871
+           (code-7720
             (new prop:code% (value list->font) (value-code 'list->font)))
-           (code-12869
+           (code-7718
             (new
              prop:font%
-             (value code-12870)
-             (prop-code code-12871)
+             (value code-7719)
+             (prop-code code-7720)
              (generate-quoted-code '#t)))
-           (code-12868
+           (code-7717
             (new
              prop:field-id%
-             (value code-12869)
+             (value code-7718)
              (field-id 'font)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12873 (new prop:atom% (value '#t)))
-           (code-12872
+           (code-7722 (new prop:atom% (value '#t)))
+           (code-7721
             (new
              prop:field-id%
-             (value code-12873)
+             (value code-7722)
              (field-id 'enabled)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12875 (new prop:atom% (value '2)))
-           (code-12874
+           (code-7724 (new prop:atom% (value '2)))
+           (code-7723
             (new
              prop:field-id%
-             (value code-12875)
+             (value code-7724)
              (field-id 'vert-margin)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12877 (new prop:atom% (value '2)))
-           (code-12876
+           (code-7726 (new prop:atom% (value '2)))
+           (code-7725
             (new
              prop:field-id%
-             (value code-12877)
+             (value code-7726)
              (field-id 'horiz-margin)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12879 (new prop:atom% (value '0)))
-           (code-12878
+           (code-7728 (new prop:atom% (value '0)))
+           (code-7727
             (new
              prop:field-id%
-             (value code-12879)
+             (value code-7728)
              (field-id 'min-width)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12881 (new prop:atom% (value '0)))
-           (code-12880
+           (code-7730 (new prop:atom% (value '0)))
+           (code-7729
             (new
              prop:field-id%
-             (value code-12881)
+             (value code-7730)
              (field-id 'min-height)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12883 (new prop:atom% (value '#t)))
-           (code-12882
+           (code-7732 (new prop:atom% (value '#t)))
+           (code-7731
             (new
              prop:field-id%
-             (value code-12883)
+             (value code-7732)
              (field-id 'stretchable-width)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12885 (new prop:atom% (value '#f)))
-           (code-12884
+           (code-7734 (new prop:atom% (value '#f)))
+           (code-7733
             (new
              prop:field-id%
-             (value code-12885)
+             (value code-7734)
              (field-id 'stretchable-height)
              (option '#f)
              (necessary '#f)
              (no-code '#f)
              (hidden '#f)))
-           (code-12852
+           (code-7701
             (new
              mred-id%
              (plugin (get-widget-plugin 'gauge))
-             (mred-parent code-12411)
+             (mred-parent code-7232)
              (properties
               (list
-               (cons 'id code-12853)
-               (cons 'code-gen-class code-12855)
-               (cons 'label code-12857)
-               (cons 'range code-12859)
-               (cons 'style code-12861)
-               (cons 'font code-12868)
-               (cons 'enabled code-12872)
-               (cons 'vert-margin code-12874)
-               (cons 'horiz-margin code-12876)
-               (cons 'min-width code-12878)
-               (cons 'min-height code-12880)
-               (cons 'stretchable-width code-12882)
-               (cons 'stretchable-height code-12884))))))
+               (cons 'id code-7702)
+               (cons 'code-gen-class code-7704)
+               (cons 'label code-7706)
+               (cons 'range code-7708)
+               (cons 'style code-7710)
+               (cons 'font code-7717)
+               (cons 'enabled code-7721)
+               (cons 'vert-margin code-7723)
+               (cons 'horiz-margin code-7725)
+               (cons 'min-width code-7727)
+               (cons 'min-height code-7729)
+               (cons 'stretchable-width code-7731)
+               (cons 'stretchable-height code-7733))))))
       (list
-       code-12395
-       code-12411
-       code-12465
-       code-12472
-       code-12483
-       code-12500
-       code-12517
-       code-12534
-       code-12551
-       code-12568
-       code-12585
-       code-12602
-       code-12619
-       code-12636
-       code-12653
-       code-12670
-       code-12687
-       code-12721
-       code-12746
-       code-12782
-       code-12816
-       code-12852)))))
+       code-7216
+       code-7232
+       code-7286
+       code-7293
+       code-7304
+       code-7321
+       code-7338
+       code-7355
+       code-7372
+       code-7389
+       code-7406
+       code-7423
+       code-7440
+       code-7457
+       code-7474
+       code-7491
+       code-7508
+       code-7519
+       code-7536
+       code-7570
+       code-7595
+       code-7631
+       code-7665
+       code-7701)))))

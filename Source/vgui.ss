@@ -35,7 +35,7 @@
 (define project-vortaro #f)
 (define frame-main #f)
 (define menu-bar-1204 #f)
-(define menu-2284 #f)
+(define menu-enigu #f)
 (define menu-item-c #f)
 (define menu-item-cap-c #f)
 (define menu-item-g #f)
@@ -48,6 +48,8 @@
 (define menu-item-cap-s #f)
 (define menu-item-u #f)
 (define menu-item-cap-u #f)
+(define menu-helpu #f)
+(define menu-item-nunigu #f)
 (define message-main-label #f)
 (define horizontal-pane-3929 #f)
 (define text-field-vorto #f)
@@ -55,8 +57,6 @@
 (define text-field-trovata #f)
 (define gauge-load #f)
 (define (project-vortaro-init
-         #:menu-bar-1204-demand-callback
-         (menu-bar-1204-demand-callback (lambda (m) (void)))
          #:menu-item-c-callback
          (menu-item-c-callback (lambda (item event) (void)))
          #:menu-item-cap-c-callback
@@ -81,6 +81,8 @@
          (menu-item-u-callback (lambda (item event) (void)))
          #:menu-item-cap-u-callback
          (menu-item-cap-u-callback (lambda (item event) (void)))
+         #:menu-item-nunigu-callback
+         (menu-item-nunigu-callback (lambda (item event) (void)))
          #:message-main-label-label
          (message-main-label-label
           (label-bitmap-proc
@@ -108,11 +110,8 @@
      (stretchable-width #t)
      (stretchable-height #t)))
   (set! menu-bar-1204
-    (new
-     menu-bar%
-     (parent frame-main)
-     (demand-callback menu-bar-1204-demand-callback)))
-  (set! menu-2284
+    (new menu-bar% (parent frame-main) (demand-callback (lambda (m) (void)))))
+  (set! menu-enigu
     (new
      menu%
      (parent menu-bar-1204)
@@ -122,7 +121,7 @@
   (set! menu-item-c
     (new
      menu-item%
-     (parent menu-2284)
+     (parent menu-enigu)
      (label "ĉ")
      (callback menu-item-c-callback)
      (shortcut #\C)
@@ -132,7 +131,7 @@
   (set! menu-item-cap-c
     (new
      menu-item%
-     (parent menu-2284)
+     (parent menu-enigu)
      (label "Ĉ")
      (callback menu-item-cap-c-callback)
      (shortcut #\C)
@@ -142,7 +141,7 @@
   (set! menu-item-g
     (new
      menu-item%
-     (parent menu-2284)
+     (parent menu-enigu)
      (label "ĝ")
      (callback menu-item-g-callback)
      (shortcut #\G)
@@ -152,7 +151,7 @@
   (set! menu-item-cap-g
     (new
      menu-item%
-     (parent menu-2284)
+     (parent menu-enigu)
      (label "Ĝ")
      (callback menu-item-cap-g-callback)
      (shortcut #\G)
@@ -162,7 +161,7 @@
   (set! menu-item-h
     (new
      menu-item%
-     (parent menu-2284)
+     (parent menu-enigu)
      (label "ĥ")
      (callback menu-item-h-callback)
      (shortcut #\H)
@@ -172,7 +171,7 @@
   (set! menu-item-cap-h
     (new
      menu-item%
-     (parent menu-2284)
+     (parent menu-enigu)
      (label "Ĥ")
      (callback menu-item-cap-h-callback)
      (shortcut #\H)
@@ -182,7 +181,7 @@
   (set! menu-item-j
     (new
      menu-item%
-     (parent menu-2284)
+     (parent menu-enigu)
      (label "ĵ")
      (callback menu-item-j-callback)
      (shortcut #\J)
@@ -192,7 +191,7 @@
   (set! menu-item-cap-j
     (new
      menu-item%
-     (parent menu-2284)
+     (parent menu-enigu)
      (label "Ĵ")
      (callback menu-item-cap-j-callback)
      (shortcut #\J)
@@ -202,7 +201,7 @@
   (set! menu-item-s
     (new
      menu-item%
-     (parent menu-2284)
+     (parent menu-enigu)
      (label "ŝ")
      (callback menu-item-s-callback)
      (shortcut #\S)
@@ -212,7 +211,7 @@
   (set! menu-item-cap-s
     (new
      menu-item%
-     (parent menu-2284)
+     (parent menu-enigu)
      (label "Ŝ")
      (callback menu-item-cap-s-callback)
      (shortcut #\S)
@@ -222,7 +221,7 @@
   (set! menu-item-u
     (new
      menu-item%
-     (parent menu-2284)
+     (parent menu-enigu)
      (label "ŭ")
      (callback menu-item-u-callback)
      (shortcut #\U)
@@ -232,13 +231,30 @@
   (set! menu-item-cap-u
     (new
      menu-item%
-     (parent menu-2284)
+     (parent menu-enigu)
      (label "Ŭ")
      (callback menu-item-cap-u-callback)
      (shortcut #\U)
      (help-string "Item")
      (demand-callback (lambda (item) (void)))
      (shortcut-prefix '(ctl shift))))
+  (set! menu-helpu
+    (new
+     menu%
+     (parent menu-bar-1204)
+     (label "&Helpu")
+     (help-string "iom da utila ilo")
+     (demand-callback (lambda (m) (void)))))
+  (set! menu-item-nunigu
+    (new
+     menu-item%
+     (parent menu-helpu)
+     (label "Nunigu")
+     (callback menu-item-nunigu-callback)
+     (shortcut #f)
+     (help-string "nunigu vortaron")
+     (demand-callback (lambda (item) (void)))
+     (shortcut-prefix '())))
   (set! message-main-label
     (new
      message%
