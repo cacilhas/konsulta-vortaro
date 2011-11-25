@@ -1,4 +1,5 @@
 *.swp
 *.swo
+.DS_Store
 compiled/
 Konsulta Vortaro.app
