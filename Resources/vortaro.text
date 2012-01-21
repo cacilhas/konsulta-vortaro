@@ -168,7 +168,7 @@ angilo:	med. vaso sanguíneo ou linfático
 anglo:	inglês (indivíduo natural da Inglaterra)	::angla:	inglês	::angle: em inglês	::Anglio, Anglolando, Anglujo:	Inglaterra	::anglismo:	anglicismo
 Angolo:	Angola	::angolano:	angolano
 angoro:	angútia, ânsia, aflição
-angulo:	geom. ângulo, canto	::ortangulo:	v. «orto»
+angulo:	geom. ângulo, canto	::ortangulo:	v. «orto»	::rektangulo:	geom. retângulo	::triangulo:	geom. triângulo
 anĝelo:	anjo	::anĝela:	angelical	::Anĝelo:	Ângelo	::ĉefanĝelo:	arcanjo
 animo:	alma, espírito	::animi: tr. animar (dar vida), agir como mestre de cerimônias, dar ação	::grandanmo:	magnânimo	::unuanima:	unânime
 ankaŭ:	também, outrossim
@@ -504,7 +504,7 @@ cimo:	zoo. percevejo
 cindro:	cinza	::cindrigi:	calcinar, reduzir a cinzas	::cindrujo:	cinzeiro	::Cindrulino:	Cinderela, Gata Borralheira, Maria Borralheira
 cinika:	cínico
 ciro:	graxa	::ciri:	tr. engraxar
-cirklo:	círculo
+cirklo:	geom. círculo
 cirko:	circo
 cirkonstanco:	circunstância
 cirkuli:	i. circular (mover em círculo)	::cirkulado:	circulação
@@ -598,7 +598,7 @@ definitiva:	definitvo, decisivo	::definitive:	definitivamente
 degeli:	i. degelar, derreter-se	::degelo:	degelo (ação de degelar)
 Dejmo:	Deimos
 deĵori:	i. estar de serviço, estar de plantão
-dek:	dez	::deka:	décimo (lugar)	::dekduedro:	mat. dodecaedro	::dekmilo:	v. «miriado»	::dekono:	um décimo	::dekope:	de dez em dez	::dudekedro:	mat. icosaedro
+dek:	dez	::deka:	décimo (lugar)	::dekduedro:	geom. dodecaedro	::dekmilo:	v. «miriado»	::dekono:	um décimo	::dekope:	de dez em dez	::dudekedro:	geom. icosaedro
 dekano:	decano, deão
 deklami:	tr. declamar, recitar
 dekaro, deklaracio:	declaração, depoimento	::deklari:	declarar, depor
@@ -723,7 +723,7 @@ drinki:	i. beber	::drinkaĵo:	bebida	::drinkulo:	bêbado
 drivi:	náut. i. derivar
 drogo:	droga	::drogigi:	tr. dopar, v. «dopi»
 droni:	i. afogar-se, submergir	::drinigi:	afogar
-du:	dois	::dekduedro:	mat. dodecaedro	::dua:	segundo	::dudekedro:	mat. icosaedro	::duobla:	dobro	::duobligi:	dobrar	::duono:	metade	::duope:	aos pares
+du:	dois	::dekduedro:	geom. dodecaedro	::dua:	segundo	::dudekedro:	geom. icosaedro	::duobla:	dobro	::duobligi:	dobrar	::duono:	metade	::duope:	aos pares
 dubi:	i. duvidar	::dubinda:	dúbio	::dubo:	dúvida	::sendube:	sem dúvida alguma
 duko:	duque
 dum:	durante, enquanto	::dume:	entrementes, nesse ínterim
@@ -736,7 +736,7 @@ ec:	suf. indica qualidade, estado, tempo (a forma adjetiva «eca» substitui a t
 eĉ:	mesmo, até mesmo
 edelvejso:	bot. edelweiss
 edifo:	edificação	::edifa:	edificante
-edro:	mat. lado de um poliedro; v. «pluredro»
+edro:	geom. lado de um poliedro; v. «pluredro»
 eduki:	tr. educar, criar
 edzo:	esposo	::edziĝi, edziniĝi:	casar-se	::edzino:	esposa	::eksedziĝi, eksedziniĝi:	divorciar-se	::geedzoj:	casal (esposo e esposa)
 efekto:	efeito, impressão
@@ -792,6 +792,7 @@ elektrono:	fís. elétron
 elektronika:	eletrônico	::elektroniko:	eletrônico (técnico)
 elemento:	elemento	::kemia elemento:	elemento químico	::elementa:	elementar
 elimini:	tr. eliminar, expulsar, afastar
+elipso:	geom. elipse
 elizii:	tr. elidir	::elizio:	elisão
 elokventa:	eloquente
 em:	suf. indica hábito, tendência	::emi:	tender a, ter tendência a
@@ -1097,6 +1098,7 @@ genuo:	joelho	::surgenuiĝi:	ajoelhar-se
 geografo:	geógrafo	::geografia:	geográfico	::geografio:	geografia
 geokemio:	quím. geoquímica
 geologo:	geólogo	::geologia:	geológico	::geologio:	geologia
+geometrio:	geometria	::geometria:	geométrico
 gepardo:	guepardo, chitá, lobo-tigre
 germano:	alemão	::Germanio, Germanujo:	Alemanha	::germanismo:	uso de radicais germânicos em Esperanto	::Sankta Germano:	Saint Germain
 gesto:	gesto, aceno	::gesti:	i. fazer um gesto, acenar	::gestlingvo:	mímica
@@ -1902,7 +1904,7 @@ kruta:	íngreme, escarpado, que apresenta declive muito inclinado, próximo de v
 ksero, kserografio:	xerografia, fotocópia	::ksera:	xerográfico	::kserokopio:	cópia xerográfica
 k.t.p.:	«kaj tiel plu», etc. (et coetera)
 Kubo:	Cuba	::kubano:	cubano (natural de Cuba)
-kubo:	mat. cubo, hexaedro, v. «heksaedro» e «sesedro»
+kubo:	geom. cubo, hexaedro, v. «heksaedro» e «sesedro»
 kubuto:	cotovelo
 kudri:	tr. coser, costurar	::kunkudro, kunkudraĵo:	costura; med. sutura	::kudrero:	ponto	::kudrilo:	agulha
 kuglo:	bala, projétil
@@ -1947,7 +1949,7 @@ kvakero:	quacre, quacker	::kvakera:	quacre (relativo à seita)
 kvalito:	qualidade, predicado, propriedade
 kvankam:	conj. embora, ainda que, conquanto, posto que
 kvanto:	quantidade
-kvar:	quatro	::kvara:	quarto (ordinal)	::kvaredro:	mat. tetraedro	::kvarono:	um quarto	::kvarope:	de quatro em quatro
+kvar:	quatro	::kvara:	quarto (ordinal)	::kvaredro:	geom. tetraedro	::kvarono:	um quarto	::kvarope:	de quatro em quatro
 kvarlatero:	quadrilátero
 kvartalo:	bairro
 kvazaŭ:	conj. adv. como se, como que
@@ -2470,7 +2472,7 @@ ofico:	emprego, ofício, lugar, cargo	::oficejo:	escritório, repartição	::ofi
 Ofiuĥo:	astr. Ofiúro, Ophiuchus (9a. constelação zodiacal, segundo a astronomia, 30 de novembro a 17 de dezembro)
 ofseto:	tip. offset
 ofta:	frequente	::malofta:	raro	::ofte:	frequentemente, amiúde, muitas vezes
-ok:	oito	::oka:	oitavo	::okedro:	mat. octaedro
+ok:	oito	::oka:	oitavo	::okedro:	geom. octaedro
 okazi:	i. acontecer, suceder, ter lugar	::ĉiuokaze:	em todo caso	::en la okazo, se...:	na hipótese de...	::okaze:	casualmente, eventualmente	::okazigi:	ocasionar, provocar, causar	::okazo, okazaĵo:	acontecimento, ocorrência
 okcidento:	ocidente	::okcidenta:	ocidental
 okro:	ocre; v. «oranĝo»
@@ -2664,8 +2666,8 @@ perdriko:	zoo. perdiz
 perei:	i. percer, destruir-se	::pereigi:	arruinar, destruir	::pereiĝo, pereigo:	perecimento
 perfekta:	perfeito, aprimorado	::perfekteco:	perfeição	::perfektigi:	aperfeiçoar
 perfidi:	tr. trair, atraiçoar	::perfidema:	pérfido	::perfido:	traição
-periferio:	mat. periferia
-perimetro:	mat. perímetro
+periferio:	periferia
+perimetro:	geom. perímetro
 periodo:	período	::perioda tabelo:	quím. tabela periódica
 periskopo:	periscópio
 perlo:	pérola
@@ -2844,7 +2846,7 @@ principo:	princípio (base, elemento, lei)	::principe:	em princípio
 princo:	príncipe	::princido:	filho do príncipe	::princino:	princesa
 printempo:	primavera
 printi:	comp. imprimir	::neprinteblaĵo:	caracter não-impressível	::printatoro:	comp. impressora
-prismo:	mat. prisma
+prismo:	geom. prisma
 privata:	privado, particular
 privilegio:	privilégio	::privilega:	privilegiado
 pro:	por causa de; por amor de; por, em troca de	::propeti:	tr. interceder por	::pro tio, ke:	por isso que, v. «tial»
@@ -2954,7 +2956,7 @@ radikala:	radical (partidário do radicalismo)	::radikalo:	mat. radical	::radika
 radiko:	raiz	::elradikigi:	arrancar a raiz, erradicar
 radio:	mat. luz, raio; el. rádio	::radii:	i. radiar, irradiar-se	::radiisto:	radialista	::radiumo:	quím. rádio
 radiofonio:	radiofonia
-radiuso:	anat. rádio; mat. raio
+radiuso:	anat. rádio; geom. raio
 Rafaelo:	Rafael
 rafano:	bot. rábano
 rafini:	tr. refinar, acrisolar, apurar (metais)	::rafinejo:	refinaria
@@ -3012,7 +3014,7 @@ rekomendi:	tr. recomendar; registrar (correspondência)
 rekompenco:	recompensa, remuneração	::rekompenci:	tr. recompensar, remunerar, premiar
 rekordo:	esp. recorde
 rekruto:	recruta, conscrito	::rekruti:	mil. tr. recrutar, alistar
-rekta:	reto, direito; direto
+rekta:	reto, direito; direto	::rektangulo:	geom. retângulo
 rektoro:	reito (escolar)
 rekviri, rekvizicii:	jur. tr. requisitar (pessoas ou bens)
 relativa:	relativo
@@ -3094,7 +3096,7 @@ rojalto:	royalty
 roko:	rocha, rochedo
 rolo:	tea. parte, papel	::ludantrolanto:	PC (RPG)	::neludantrolanto:	NPC (RPG)	::rolanto:	ator	::rolludo:	RPG (duonreala: LARP, em oposição a surtabla)
 romantika:	romântico	::romantiko:	romantismo
-rombo:	mat. losango
+rombo:	geom. losango
 Romo:	Roma	::romano:	romano (natural de Roma), lit. romance
 rompi:	tr. romper, rasgar, quebrar, partir	::interrompi:	tr. interromper	::rompiĝema:	frágil quebradiço
 ronda:	circular, redondo	::rondo:	circunferência, círculo; roda (de pessoas)
@@ -3220,7 +3222,7 @@ serumo:	med. soro (solução de substância orgânica ou mineral com fins terap�
 seruro:	fechadura	::seruristo:	aquele que faz, aplica ou repara fechaduras
 servi:	i. servir, ajudar, prestar serviço	::servisto:	criado, servente, servidor	::servo:	serviço
 servuto:	servidão	::servutulo:	servo, escravo (feudal)
-ses:	seis	::sesa:	sexto	::sesedro:	mat. v. «kubo»	::sesono:	um sexto (1/6)
+ses:	seis	::sesa:	sexto	::sesedro:	geom. v. «kubo»	::sesono:	um sexto (1/6)
 sesio:	sessão (jur. período de funcionamento de parlamento, assembléia ou instância judicial etc.)
 severa:	severo, rígido, rigoroso, austero
 sezono:	estação (do ano)
@@ -3446,7 +3448,7 @@ supozi:	tr. supor, conjeturar, fazer de conta	::supozo:	suposição, hipótese
 supre, supren:	para cima	::malsupre, malsupren:	para baixo	::supra:	superior	::supraĵo:	superfície	::supreniri:	i. subir	::supro:	vértice, cume, cimo
 sur:	prep. sobre	::surmeti:	tr. apor, vestir	::surskribi:	tr. sobrescrever	::surŝipe:	à bordo
 surda:	surdo	::surdmutulo, surdamutulo:	surdo-mudo
-surfaco:	mat. superfície
+surfaco:	geom. superfície
 surfeku:	«tute ne gravas», germanismo usado apenas no imperativo e com sentido irônico
 Surinamo:	Suriname
 surprizi:	tr. surpreender, sobressaltar	::surprizo:	sobressalto, surpresa (ação)
@@ -3888,7 +3890,7 @@ vertago:	zoo. bassê
 vertebro:	vértebra	::vertebra:	vertebral, vertebrado
 vertiĝo:	vertigem; med. tontura	::vertiĝi:	i. sentir vertingem
 vertikala:	vertical
-verto:	mat. vértice; anat. vértice (anat. o ponto mais elevada da abóbada craniana)
+verto:	geom. vértice; anat. vértice (anat. o ponto mais elevada da abóbada craniana)
 veruko:	verruga
 vervo:	verve, estro	::senverva:	inexpressivo, insosso	::verva:	expressivo
 vespero:	tarde, entardecer, noite, véspera	::vespere:	ao entardecer
