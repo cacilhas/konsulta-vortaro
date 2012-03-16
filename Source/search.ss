@@ -22,8 +22,7 @@
 
 
 (define lines-count
-  (let ((fd (open-input-file dict-path))
-        (count 0))
+  (let ((fd (open-input-file dict-path)))
     (let loop ((line (read-line fd)) (count 0))
       (if (eof-object? line)
           (begin
