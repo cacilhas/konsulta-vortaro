@@ -7,7 +7,7 @@
 	<key>CFBundleExecutable</key>
 	<string>Konsulta Vortaro</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.blogspot.kodumaro.Konsulta Vortaro</string>
+	<string>info.cacilhas.kodumaro.Konsulta Vortaro</string>
 	<key>CFBundleIconFile</key>
 	<string>Starter</string>
 	<key>CFBundleInfoDictionaryVersion</key>
